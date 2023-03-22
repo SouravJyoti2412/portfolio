@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        
+
+    </head>
+    <body  >
+          <header>
+            <nav class="shadow-md 
+            fixed  z-10">
+                <label><img src="/images/hamberger.png" id="hamberger" class="hamberger"></label>
+                <label class="logo"><a href ="#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
+                <ul>
+                    <li><a href="#hero">home</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#">eduaction</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+               
+            </nav>
+          </header>  
+    <div class="child" style="display:none;">
+        <div class="close-bottom"><img src="/images/cross.png" id="cross" class="cross"></div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">home</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#">eduaction</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero" id="hero" data-aos="fade-up">
+        <div class="container mx-auto px-4 py-56 animate__animated animate__fadeIn hero-text">
+            <h1 class="text-4xl text-white font-bold mb-2">Sourav Jyoti Naskar</h1>
+            <h2 class=" text-3xl text-gray-300 font-bold mb-2">I am <span class="typed-text-output "></span></h2>
+            <div class="typed-text hidden">Web Designer, Web Developer, Front-End Dev, Full-Stack Dev</div>
+            <button onclick="window.location.href='/images/SouravJyotiNaskarCv.pdf';"   class="bg-blue-500  ml-4 hover:bg-blue-700 rounded text-white font-bold p-4 rounded">
+                View CV
+            </button>
+            <button onclick="window.location.href='tel:+917001159812';" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white p-4 border border-white hover:border-transparent rounded">
+                Contact me for Your project
+            </button>
+        </div>
+    </div>
+    <div class="container mx-auto my-8 pl-2 pr-2" data-aos="fade-right">
+            <!-- <div class="flex justify-between mb-8">
+                <h1 class="text-3xl font-bold">My Skills and Experience</h1>
+                <a href="#"id="link" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download CV</a>
+            </div> -->
+    
+            <!-- Skill Section -->
+            <div class="mb-8">
+                
+                <div class="flex flex-wrap justify-between">
+                    
+                    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 mb-4">
+                        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
+                            <h3 class="text-xl font-bold mb-2">Python</h3>
+                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-gray-300 absolute"></div>
+                                <div class="h-full bg-red-500 absolute" style="width: 75%;"></div>
+                            </div>
+                            <div class="text-right mt-1">75%</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
+                            <h3 class="text-xl font-bold mb-2">Django</h3>
+                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-gray-300 absolute"></div>
+                                <div class="h-full bg-blue-500 absolute" style="width: 90%;"></div>
+                            </div>
+                            <div class="text-right mt-1">90%</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
+                            <h3 class="text-xl font-bold mb-2">Html</h3>
+                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-gray-300 absolute"></div>
+                                <div class="h-full bg-blue-500 absolute" style="width: 95%;"></div>
+                            </div>
+                            <div class="text-right mt-1">95%</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-lg p-2">
+                            <h3 class="text-xl font-bold mb-2">Css</h3>
+                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-gray-300 absolute"></div>
+                                <div class="h-full bg-gray-500 absolute" style="width: 85%;"></div>
+                            </div>
+                            <div class="text-right mt-1">85%</div>
+                        </div>
+                        <div class="bg-gray-200 rounded-lg p-2">
+                            <h3 class="text-xl font-bold mb-2">Jquery</h3>
+                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-gray-300 absolute"></div>
+                                <div class="h-full bg-pink-500 absolute" style="width: 75%;"></div>
+                            </div>
+                            <div class="text-right mt-1">75%</div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 mb-4 pl-4">
+                        <h2 class="text-2xl font-bold mb-4">Experience</h2>
+                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
+                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
+                          <div class="text-gray-600 text-sm mb-4 ml-8">Azmuth Technologies Pvt Ltd - October 2022 to Present</div>
+                          <ul class="list-disc ml-8">
+                              <li>Developed web applications using Python, Django, HTML, CSS, and JavaScript Created REST APIs for efficient communication between applications</li>
+                              <li>Created REST APIs for efficient communication between applications</li>
+                          </ul>
+                        </div>
+                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
+                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
+                          <div class="text-gray-600 text-sm mb-4 ml-8">Ufx Studio - june 2022 to August 2022</div>
+                          <ul class="list-disc ml-8">
+                              <li>Developed web applications using Python, Django, HTML, CSS,booststarp and JavaScript</li>
+                             
+                          </ul>
+                        </div>
+                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
+                          <h3 class="text-xl font-bold mb-2">Front end Web Developer</h3>
+                          <div class="text-gray-600 text-sm mb-4 ml-8">Kamprik Software Development Pvt Ltd  - December 2021 to january 2022</div>
+                          <ul class="list-disc ml-8">
+                              <li>Developed web applications using HTML, CSS,Bootstrap and JavaScript </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="body-font "data-aos="slide-up">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">My Services</h1>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/2 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4"> 
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M392.473 156.644C397.473 170.551 400.02 185.221 400 200C400.06 221.785 395.798 243.366 387.461 263.492C379.124 283.619 366.878 301.893 351.432 317.255L331.716 336.971C327.99 340.676 325.036 345.084 323.025 349.939C321.014 354.794 319.986 360 320 365.255V400H192V368C192 366.949 191.794 365.909 191.392 364.939C190.99 363.968 190.4 363.086 189.657 362.343C188.914 361.6 188.033 361.011 187.062 360.609C186.091 360.207 185.051 360 184 360H164.96C159.003 360.017 153.255 357.811 148.838 353.814C144.422 349.818 141.655 344.317 141.08 338.388L135.961 287.204C135.763 285.23 134.84 283.4 133.369 282.069C131.898 280.737 129.984 280 128 280H104.849C103.51 280 102.193 279.664 101.018 279.023C99.8425 278.382 98.847 277.457 98.1222 276.331C97.3975 275.206 96.9668 273.917 96.8695 272.582C96.7722 271.247 97.0115 269.909 97.5654 268.69L127.284 203.311C127.756 202.271 128 201.142 128 200C128.039 166.064 141.537 133.529 165.533 109.533C189.529 85.5364 222.064 72.0384 256 72.0001H272C295.958 71.9748 319.44 78.6923 339.759 91.3843L348.242 77.8179C325.379 63.5346 298.958 55.9738 272 56.0001H256C177.185 56.0001 112.956 119.648 112.011 198.244L82.9999 262.069C81.3382 265.725 80.6203 269.739 80.9121 273.744C81.2038 277.749 82.4959 281.617 84.67 284.993C86.844 288.37 89.8305 291.147 93.3559 293.07C96.8813 294.992 100.833 296 104.849 296H120.761L125.159 339.98C126.118 349.861 130.73 359.029 138.09 365.69C145.451 372.352 155.032 376.028 164.96 376H176V408C176.001 408.527 176.053 409.052 176.156 409.569L187.011 463.845C188.843 472.903 193.748 481.05 200.895 486.909C208.042 492.769 216.993 495.98 226.234 496H285.767C295.008 495.98 303.959 492.769 311.106 486.91C318.253 481.05 323.158 472.903 324.99 463.845L335.845 409.569C335.948 409.052 336 408.527 336 408V365.255C335.992 362.102 336.609 358.979 337.815 356.066C339.022 353.153 340.794 350.508 343.03 348.284L362.746 328.568C379.682 311.724 393.11 291.687 402.251 269.619C411.392 247.55 416.066 223.887 416 200C416.021 183.374 413.154 166.87 407.528 151.225L392.473 156.644ZM193.759 416H318.242L313.442 440H198.559L193.759 416ZM285.767 480H226.234C220.689 479.988 215.319 478.061 211.03 474.546C206.742 471.03 203.8 466.142 202.7 460.707L201.759 456H310.242L309.301 460.707C308.201 466.142 305.259 471.03 300.97 474.546C296.682 478.061 291.312 479.988 285.767 480V480Z" fill="#317ce6" id="id_101"></path>
+                        <path d="M442.344 58.3428L418.344 82.3428L429.657 93.6562L453.657 69.6562L442.344 58.3428Z" fill="black" id="id_102"></path>
+                        <path d="M496 248H432V264H496V248Z" fill="black" id="id_103"></path>
+                        <path d="M484.848 144.647L428.849 168.647L435.151 183.354L491.151 159.353L484.848 144.647Z" fill="black" id="id_104"></path>
+                        <path d="M353.6 19.1999L329.601 51.2002L342.4 60.7998L366.4 28.7995L353.6 19.1999Z" fill="black" id="id_105"></path>
+                        <path d="M264 16H248V48H264V16Z" fill="black" id="id_106"></path>
+                        <path d="M69.6562 58.3428L58.3428 69.6562L98.3428 109.656L109.656 98.3428L69.6562 58.3428Z" fill="black" id="id_107"></path>
+                        <path d="M64 248H16V264H64V248Z" fill="#000000" id="id_108"></path>
+                        <path d="M27.1514 144.646L20.8486 159.353L76.8484 183.353L83.1512 168.647L27.1514 144.646Z" fill="black" id="id_109"></path>
+                        <path d="M158.4 19.2L145.601 28.7998L169.601 60.7998L182.4 51.2L158.4 19.2Z" fill="black" id="id_110"></path>
+                        <path d="M152.072 174.928C151.877 176.371 152.079 177.839 152.657 179.175C153.234 180.511 154.166 181.664 155.35 182.51L208 220.117V288C208 289.521 208.433 291.01 209.249 292.293C210.065 293.576 211.23 294.6 212.607 295.245C213.984 295.89 215.516 296.129 217.024 295.934C218.532 295.739 219.953 295.119 221.121 294.146L264.657 257.866L323.294 294.771C324.306 295.407 325.447 295.809 326.634 295.947C327.821 296.084 329.024 295.954 330.154 295.566C331.284 295.178 332.313 294.542 333.165 293.704C334.017 292.866 334.671 291.848 335.077 290.725L407.522 90.7246C408.041 89.2923 408.14 87.7416 407.807 86.2549C407.475 84.7682 406.725 83.4073 405.646 82.3322C404.566 81.2572 403.202 80.5126 401.715 80.186C400.227 79.8594 398.676 79.9645 397.246 80.4888L157.246 168.489C155.879 168.99 154.675 169.854 153.764 170.989C152.852 172.124 152.267 173.486 152.072 174.928V174.928ZM224 220.228L348.292 135.483L258.335 242.307L224 270.919V220.228ZM323.415 275.941L276.038 246.124L378.128 124.893L323.415 275.941ZM350.316 114.738L216.106 206.245L176.977 178.296L350.316 114.738Z" fill="black" id="id_111"></path>
+                        <path d="M266.344 290.344L210.344 346.344L221.657 357.657L277.657 301.657L266.344 290.344Z" fill="#088ff7" id="id_112"></path>
+                        <path d="M178.343 274.344L154.343 298.344L165.656 309.657L189.656 285.657L178.343 274.344Z" fill="#e03696" id="id_113"></path>
+                        <path d="M170.343 218.343L146.343 242.343L157.656 253.656L181.656 229.656L170.343 218.343Z" fill="#24b3f0" id="id_114"></path>
+                        <path d="M306.344 306.344L282.344 330.344L293.657 341.657L317.657 317.657L306.344 306.344Z" fill="#2394eb" id="id_115"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Creative Design</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/2 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/2 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                  </div>
+                </div>
+                <div class="xl:w-1/2 md:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                  </div>
+                </div>
+              
+                
+              </div>
+              <!-- <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
+            </div>
+          </section>
+    <section data-aos="slide-right" >
+      <section class="container mx-auto my-8 p-4" id ="projects">
+        <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+          <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Working On Projects which are Live</h1>
+		    </div>
+
+		<!-- Project Showcase -->
+		<div class="flex flex-wrap justify-between "  >
+			<div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white hover:bg-gray-200 rounded-lg shadow-xl shadow-[#50d71e] overflow-hidden">
+					<a href="https://erationcard.in/"><img src="images/erationcard.png" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">e-Ration card</h3>
+						<div class="text-gray-600 text-sm mb-4">this website will give you an online digital e-ration card
+              order website, it has 2 dashboards, one is for the
+              admin, and one for the manager.
+              </div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed</div>
+						</div>
+						<a href="https://erationcard.in/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<a href="https://taniya-ambulance.com"><img src="images/taniya-ambulance.png" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Taniya Ambulance Service</h3>
+						<div class="text-gray-600 text-sm mb-4">This is a website , which have dynamic content , this
+              is a portfolio page of ambulance and anybody can
+              book ambulance from site , by book appoinment.</div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed</div>
+						</div>
+						<a href="https://taniya-ambulance.com" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<a href="https://swwcnpsngo.com/"><img src="images/swwcnpsngo.png" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Swwcnps Ngo</h3>
+						<div class="text-gray-600 text-sm mb-4">this is a simple ngo website, any body can donate money for women and children,
+              and have some blogs. and full of dayanamic
+              website</div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
+						</div>
+						<a href="https://swwcnpsngo.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<a href="https://canningpilesclinic.com/"><img src="images/canningpilesclinic.png" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Cannin piles clinic</h3>
+						<div class="text-gray-600 text-sm mb-4">a website of portfolio site of a doctor, who have own special chember</div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
+						</div>
+						<a href="https://canningpilesclinic.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<a href="https://bdcash7.com//"><img src="images/bdcash7.png" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Bdcash7</h3>
+						<div class="text-gray-600 text-sm mb-4">These sites all are gaming gambling site
+              which have 6 different type game.
+              website</div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
+						</div>
+						<a href="https://bdcash7.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+    
+    
+  </div>
+    <div class="container mx-auto px-4 py-8" data-aos="fade-up">
+      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">About Me</h1>
+      </div>~
+      <div class="flex flex-wrap -m-4">
+      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+        <p>My name is Sourav Jyoti Naskar, and I am excited to introduce myself as a full-stack web developer with expertise in Python, Django, HTML, CSS, and JQuery. I have 10 months of experience working with Django and have also worked on PHP projects in the past. I am a skilled developer with a strong foundation in Java, and I have chosen to specialize in Python due to my interest in its simplicity and flexibility.
+          As a developer, I have a solid foundation in both front-end and back-end web development, and I have experience in creating responsive, dynamic, and interactive user interfaces using HTML, CSS, and JQuery. I also have experience in creating REST APIs and am familiar with hosting websites on VPS and Cloud platforms.
+          I am a creative problem solver who enjoys collaborating with other developers and stakeholders to deliver projects on time and within budget. I have a keen eye for detail, which enables me to deliver high-quality web applications that meet client requirements. I am passionate about creating innovative and functional web applications that meet the needs of users.
+          I am also currently learning React to enhance my front-end development skills and expand my skillset. I am excited to continue learning and growing as a developer and to bring my skills and experience to your team.
+          
+          Thank you for considering my application. I am excited about the opportunity to work with you and contribute to your team's success.
+        </p>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+        <img src="images/IMG_3366.JPG" alt="Project Image" class="w-full p-4 rounded">
+      </div>
+      </div>
+      </div>
+      <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4">
+          <p class="text-center">&copy; 2023 Sourav Jyoti Naskar. All rights reserved.</p>
+        </div>
+      </footer>          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="style.js" async defer></script>
+    
+    
+    </body>
+</html>
