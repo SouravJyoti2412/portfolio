@@ -19,7 +19,7 @@
           <header>
             <nav class="shadow-md 
             fixed  z-10">
-                <label><img src="/images/hamberger.png" id="hamberger" class="hamberger"></label>
+                <label><img src="images/hamberger.png" id="hamberger" class="hamberger"></label>
                 <label class="logo"><a href ="#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
                 <ul>
                     <li><a href="#hero">home</a></li>
@@ -32,7 +32,7 @@
             </nav>
           </header>  
     <div class="child" style="display:none;">
-        <div class="close-bottom"><img src="/images/cross.png" id="cross" class="cross"></div>
+        <div class="close-bottom"><img src="images/cross.png" id="cross" class="cross"></div>
         <div class="mobile-menu">
             <ul>
                 <li><a href="#hero">home</a></li>
@@ -48,7 +48,7 @@
             <h1 class="text-4xl text-white font-bold mb-2">Sourav Jyoti Naskar</h1>
             <h2 class=" text-3xl text-gray-300 font-bold mb-2">I am <span class="typed-text-output "></span></h2>
             <div class="typed-text hidden">Web Designer, Web Developer, Front-End Dev, Full-Stack Dev</div>
-            <button onclick="window.location.href='/images/SouravJyotiNaskarCv.pdf';"   class="bg-blue-500  ml-4 hover:bg-blue-700 rounded text-white font-bold p-4 rounded">
+            <button onclick="window.location.href='images/SouravJyotiNaskarCv.pdf';"   class="bg-blue-500  ml-4 hover:bg-blue-700 rounded text-white font-bold p-4 rounded">
                 View CV
             </button>
             <button onclick="window.location.href='tel:+917001159812';" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white p-4 border border-white hover:border-transparent rounded">
@@ -93,7 +93,7 @@
                             </div>
                             <div class="text-right mt-1">95%</div>
                         </div>
-                        <div class="bg-gray-200 rounded-lg p-2">
+                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
                             <h3 class="text-xl font-bold mb-2">Css</h3>
                             <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
                                 <div class="w-full h-full bg-gray-300 absolute"></div>
@@ -110,8 +110,10 @@
                             <div class="text-right mt-1">75%</div>
                         </div>
                     </div>
-                    <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 mb-4 pl-4">
-                        <h2 class="text-2xl font-bold mb-4">Experience</h2>
+                    <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 mb-4 pl-2 pr-2">
+                      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+                        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Experience</h1>
+                      </div>
                         <div class="bg-gray-200 p-6 rounded-lg mb-4">
                           <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
                           <div class="text-gray-600 text-sm mb-4 ml-8">Azmuth Technologies Pvt Ltd - October 2022 to Present</div>
@@ -146,45 +148,86 @@
                 <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">My Services</h1>
               </div>
               <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="xl:w-1/2 md:w-1/2 sm:w-1/2 p-4">
+                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4"> 
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M392.473 156.644C397.473 170.551 400.02 185.221 400 200C400.06 221.785 395.798 243.366 387.461 263.492C379.124 283.619 366.878 301.893 351.432 317.255L331.716 336.971C327.99 340.676 325.036 345.084 323.025 349.939C321.014 354.794 319.986 360 320 365.255V400H192V368C192 366.949 191.794 365.909 191.392 364.939C190.99 363.968 190.4 363.086 189.657 362.343C188.914 361.6 188.033 361.011 187.062 360.609C186.091 360.207 185.051 360 184 360H164.96C159.003 360.017 153.255 357.811 148.838 353.814C144.422 349.818 141.655 344.317 141.08 338.388L135.961 287.204C135.763 285.23 134.84 283.4 133.369 282.069C131.898 280.737 129.984 280 128 280H104.849C103.51 280 102.193 279.664 101.018 279.023C99.8425 278.382 98.847 277.457 98.1222 276.331C97.3975 275.206 96.9668 273.917 96.8695 272.582C96.7722 271.247 97.0115 269.909 97.5654 268.69L127.284 203.311C127.756 202.271 128 201.142 128 200C128.039 166.064 141.537 133.529 165.533 109.533C189.529 85.5364 222.064 72.0384 256 72.0001H272C295.958 71.9748 319.44 78.6923 339.759 91.3843L348.242 77.8179C325.379 63.5346 298.958 55.9738 272 56.0001H256C177.185 56.0001 112.956 119.648 112.011 198.244L82.9999 262.069C81.3382 265.725 80.6203 269.739 80.9121 273.744C81.2038 277.749 82.4959 281.617 84.67 284.993C86.844 288.37 89.8305 291.147 93.3559 293.07C96.8813 294.992 100.833 296 104.849 296H120.761L125.159 339.98C126.118 349.861 130.73 359.029 138.09 365.69C145.451 372.352 155.032 376.028 164.96 376H176V408C176.001 408.527 176.053 409.052 176.156 409.569L187.011 463.845C188.843 472.903 193.748 481.05 200.895 486.909C208.042 492.769 216.993 495.98 226.234 496H285.767C295.008 495.98 303.959 492.769 311.106 486.91C318.253 481.05 323.158 472.903 324.99 463.845L335.845 409.569C335.948 409.052 336 408.527 336 408V365.255C335.992 362.102 336.609 358.979 337.815 356.066C339.022 353.153 340.794 350.508 343.03 348.284L362.746 328.568C379.682 311.724 393.11 291.687 402.251 269.619C411.392 247.55 416.066 223.887 416 200C416.021 183.374 413.154 166.87 407.528 151.225L392.473 156.644ZM193.759 416H318.242L313.442 440H198.559L193.759 416ZM285.767 480H226.234C220.689 479.988 215.319 478.061 211.03 474.546C206.742 471.03 203.8 466.142 202.7 460.707L201.759 456H310.242L309.301 460.707C308.201 466.142 305.259 471.03 300.97 474.546C296.682 478.061 291.312 479.988 285.767 480V480Z" fill="#317ce6" id="id_101"></path>
-                        <path d="M442.344 58.3428L418.344 82.3428L429.657 93.6562L453.657 69.6562L442.344 58.3428Z" fill="black" id="id_102"></path>
-                        <path d="M496 248H432V264H496V248Z" fill="black" id="id_103"></path>
-                        <path d="M484.848 144.647L428.849 168.647L435.151 183.354L491.151 159.353L484.848 144.647Z" fill="black" id="id_104"></path>
-                        <path d="M353.6 19.1999L329.601 51.2002L342.4 60.7998L366.4 28.7995L353.6 19.1999Z" fill="black" id="id_105"></path>
-                        <path d="M264 16H248V48H264V16Z" fill="black" id="id_106"></path>
-                        <path d="M69.6562 58.3428L58.3428 69.6562L98.3428 109.656L109.656 98.3428L69.6562 58.3428Z" fill="black" id="id_107"></path>
-                        <path d="M64 248H16V264H64V248Z" fill="#000000" id="id_108"></path>
-                        <path d="M27.1514 144.646L20.8486 159.353L76.8484 183.353L83.1512 168.647L27.1514 144.646Z" fill="black" id="id_109"></path>
-                        <path d="M158.4 19.2L145.601 28.7998L169.601 60.7998L182.4 51.2L158.4 19.2Z" fill="black" id="id_110"></path>
-                        <path d="M152.072 174.928C151.877 176.371 152.079 177.839 152.657 179.175C153.234 180.511 154.166 181.664 155.35 182.51L208 220.117V288C208 289.521 208.433 291.01 209.249 292.293C210.065 293.576 211.23 294.6 212.607 295.245C213.984 295.89 215.516 296.129 217.024 295.934C218.532 295.739 219.953 295.119 221.121 294.146L264.657 257.866L323.294 294.771C324.306 295.407 325.447 295.809 326.634 295.947C327.821 296.084 329.024 295.954 330.154 295.566C331.284 295.178 332.313 294.542 333.165 293.704C334.017 292.866 334.671 291.848 335.077 290.725L407.522 90.7246C408.041 89.2923 408.14 87.7416 407.807 86.2549C407.475 84.7682 406.725 83.4073 405.646 82.3322C404.566 81.2572 403.202 80.5126 401.715 80.186C400.227 79.8594 398.676 79.9645 397.246 80.4888L157.246 168.489C155.879 168.99 154.675 169.854 153.764 170.989C152.852 172.124 152.267 173.486 152.072 174.928V174.928ZM224 220.228L348.292 135.483L258.335 242.307L224 270.919V220.228ZM323.415 275.941L276.038 246.124L378.128 124.893L323.415 275.941ZM350.316 114.738L216.106 206.245L176.977 178.296L350.316 114.738Z" fill="black" id="id_111"></path>
-                        <path d="M266.344 290.344L210.344 346.344L221.657 357.657L277.657 301.657L266.344 290.344Z" fill="#088ff7" id="id_112"></path>
-                        <path d="M178.343 274.344L154.343 298.344L165.656 309.657L189.656 285.657L178.343 274.344Z" fill="#e03696" id="id_113"></path>
-                        <path d="M170.343 218.343L146.343 242.343L157.656 253.656L181.656 229.656L170.343 218.343Z" fill="#24b3f0" id="id_114"></path>
-                        <path d="M306.344 306.344L282.344 330.344L293.657 341.657L317.657 317.657L306.344 306.344Z" fill="#2394eb" id="id_115"></path>
-                        </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g >
+                        <path fill="#444444" d="M45,46H3c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h42c1.105,0,2,0.895,2,2v36C47,45.105,46.105,46,45,46z&#10;&#9;"/>
+                        <rect x="3" y="13" fill="#FFFFFF" width="42" height="31"/>
+                        <circle fill="#E86C60" cx="4.5" cy="9.5" r="1.5"/>
+                        <circle fill="#EFD358" cx="9.5" cy="9.5" r="1.5"/>
+                        <circle fill="#72C472" cx="14.5" cy="9.5" r="1.5"/>
+                        <path fill="#A67C52" d="M38.172,2.828c-1.105-1.105-2.895-1.105-4,0L21.536,15.464c0.988,0.181,1.899,0.65,2.625,1.376&#10;&#9;c0.726,0.726,1.194,1.636,1.375,2.624L38.172,6.828C39.276,5.724,39.276,3.933,38.172,2.828z"/>
+                        <path fill="#E6E6E6" d="M21.536,15.464L16,21l4,4l5.536-5.536c-0.181-0.988-0.65-1.899-1.375-2.624&#10;&#9;C23.435,16.115,22.524,15.646,21.536,15.464z"/>
+                        <path fill="#E86C60" d="M41,41H7c-0.552,0-1-0.448-1-1v-7c0-0.552,0.448-1,1-1h34c0.552,0,1,0.448,1,1v7C42,40.552,41.552,41,41,41z&#10;&#9;"/>
+                        <path fill="#444444" d="M20.863,27.192c0.89-0.934,1.387-2.146,1.387-3.441c0-1.336-0.52-2.591-1.464-3.535s-2.2-1.465-3.536-1.465&#10;&#9;c-1.336,0-2.591,0.521-3.536,1.465c-1.056,1.056-1.467,3.263-1.623,5.089c1.596,0.415,2.689,0.727,3.846,1.04&#10;&#9;C17.368,26.73,18.844,27.132,20.863,27.192z"/>
+                        <path fill="#E86C60" d="M12.008,28.02l0.025,0.948l0.947,0.025C13.109,28.996,13.304,29,13.552,29c1.667,0,5.687-0.168,7.233-1.715&#10;&#9;c0.029-0.029,0.049-0.064,0.077-0.094c-3.56-0.974-5.061-2.161-8.771-1.888C11.985,26.549,11.997,27.618,12.008,28.02z"/>
+                        </g></svg>
                     </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Creative Design</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2 font-bold">Website Design</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2">
+                      <li class="bg-white ">
+                          <ul class="list-disc">
+                              <li>Custom website design with color matching</li>
+                              <li>Responsive design for all devices</li>
+                              <li>Search engine optimization</li>
+                              <li>User-friendly interface design</li>
+                          </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
+                <div class="xl:w-1/2 sm:w-1/2 md:w-1/2 p-4 ">
+                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <circle cx="6" cy="6" r="3"></circle>
-                        <circle cx="6" cy="18" r="3"></circle>
-                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                      </svg>
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 79 79" style="enable-background:new 0 0 79 79;" xml:space="preserve">
+                   <style type="text/css">
+                     .st0{display:none;}
+                     .st1{display:inline;}
+                     .st2{fill:none;}
+                     .st3{fill:#EFD620;}
+                   </style>
+                   <g id="Layer_1" class="st0">
+                     <g id="Layer_3" class="st1">
+                       <rect class="st2" width="79" height="79"/>
+                     </g>
+                     <g id="Layer_1_1_" class="st1">
+                       <g>
+                         <path class="st3" d="M75,4v71H4V4H75 M79,0H0v79h79V0L79,0z"/>
+                       </g>
+                     </g>
+                     <g id="Layer_2_1_" class="st1">
+                       <g>
+                         <path class="st3" d="M28.3,51.7L5.8,41.2v-2.4l22.5-12v3.7L10,39.7l18.3,8.2V51.7z"/>
+                         <path class="st3" d="M47.8,21.2L35.1,57.8h-3.9l12.7-36.5L47.8,21.2L47.8,21.2z"/>
+                         <path class="st3" d="M50.7,47.9L69,39.8l-18.3-9.3v-3.7l22.5,12v2.4L50.7,51.7V47.9z"/>
+                       </g>
+                     </g>
+                   </g>
+                   <g id="Layer_2">
+                     <g>
+                       <path d="M5.9,39.5l19.9,8.2L24.3,52L0.1,41.7v-4.5L24.3,27l1.5,4.3L5.9,39.5z"/>
+                       <path d="M32.7,66.6h-5.3l19-54.2h5.2L32.7,66.6z"/>
+                       <path d="M53.2,31.3l1.5-4.3l24.2,10.2v4.5L54.7,52l-1.5-4.3l19.9-8.2L53.2,31.3z"/>
+                     </g>
+                   </g>
+                     </svg>
                     </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Web Development</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2">  
+                  <li class="bg-white">
+                      <ul class="list-disc ">
+                          <li>Custom web application development</li>
+                          <li>Front-end development using modern frameworks</li>
+                          <li>Back-end development with APIs</li>
+                          <li>E-commerce solutions</li>
+                      </ul>
+                  </li>
+                </ul>
                   </div>
                 </div>
-                <div class="xl:w-1/2 md:w-1/2 p-4">
+                <!-- <div class="xl:w-1/2 md:w-1/2 p-4">
                   <div class="border border-gray-200 p-6 rounded-lg">
                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
@@ -206,7 +249,7 @@
                     <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
                     <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
                   </div>
-                </div>
+                </div> -->
               
                 
               </div>
