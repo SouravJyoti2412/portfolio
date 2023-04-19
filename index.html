@@ -3,30 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>portfolio</title>
+        <title id="titel">portfolio | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.0/dist/tailwind.min.css" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
         
 
     </head>
-    <body  >
+    <body>
           <header>
             <nav class="shadow-md 
             fixed  z-10">
                 <label><img src="images/hamberger.png" id="hamberger" class="hamberger"></label>
-                <label class="logo"><a href ="#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
-                <ul>
-                    <li><a href="#hero">home</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#">eduaction</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                <label class="logo"><a href =  "#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
+                <ul id="navigation">
+                    <li><a href="#hero" id="home_btn">home</a></li>
+                    <li><a href="#projects" id="project_btn">projects</a></li>
+                    <li><a href="#education" id="eduaction_btn">eduaction</a></li>
+                    <li><a href="#about" id ="about_btn">about</a></li>
+                    <li><a href="#contact" id="contact_btn">contact</a></li>
                 </ul>
                
             </nav>
@@ -34,12 +34,12 @@
     <div class="child" style="display:none;">
         <div class="close-bottom"><img src="images/cross.png" id="cross" class="cross"></div>
         <div class="mobile-menu">
-            <ul>
-                <li><a href="#hero">home</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#">eduaction</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+            <ul class="navigation">
+                <li><a href="#hero" id="home_btn1">home</a></li>
+                <li><a href="#projects" id="project_btn1">projects</a></li>
+                <li><a href="#education" id="eduaction_btn1">eduaction</a></li>
+                <li><a href="#about" id ="about_btn1">about</a></li>
+                <li><a href="#contact" id="contact_btn1">contact</a></li>
             </ul>
         </div>
     </div>
@@ -48,7 +48,7 @@
             <h1 class="text-4xl text-white font-bold mb-2">Sourav Jyoti Naskar</h1>
             <h2 class=" text-3xl text-gray-300 font-bold mb-2">I am <span class="typed-text-output "></span></h2>
             <div class="typed-text hidden">Web Designer, Web Developer, Front-End Dev, Full-Stack Dev</div>
-            <button onclick="window.location.href='images/SouravJyotiNaskarCv.pdf';"   class="bg-blue-500  ml-4 hover:bg-blue-700 rounded text-white font-bold p-4 rounded">
+            <button onclick="window.location.href='images/SouravJyotiNaskarCv.pdf';"   class="bg-color  ml-4 hover:bg-blue-500 rounded text-white font-bold p-4 rounded">
                 View CV
             </button>
             <button onclick="window.location.href='tel:+917001159812';" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white p-4 border border-white hover:border-transparent rounded">
@@ -59,7 +59,7 @@
     <div class="container mx-auto my-8 pl-2 pr-2" data-aos="fade-right">
             <!-- <div class="flex justify-between mb-8">
                 <h1 class="text-3xl font-bold">My Skills and Experience</h1>
-                <a href="#"id="link" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download CV</a>
+                <a href="#"id="link" class="bg-color hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Download CV</a>
             </div> -->
     
             <!-- Skill Section -->
@@ -81,7 +81,7 @@
                             <h3 class="text-xl font-bold mb-2">Django</h3>
                             <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
                                 <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-blue-500 absolute" style="width: 90%;"></div>
+                                <div class="h-full bg-color absolute" style="width: 90%;"></div>
                             </div>
                             <div class="text-right mt-1">90%</div>
                         </div>
@@ -89,7 +89,7 @@
                             <h3 class="text-xl font-bold mb-2">Html</h3>
                             <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
                                 <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-blue-500 absolute" style="width: 95%;"></div>
+                                <div class="h-full bg-color absolute" style="width: 95%;"></div>
                             </div>
                             <div class="text-right mt-1">95%</div>
                         </div>
@@ -142,6 +142,27 @@
                 </div>
             </div>
         </div>
+        <section class="bg-gray-100 py-8" id ="education">
+          <div class="container mx-auto px-2">
+            <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+              <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Education</h1>
+            </div>
+        
+            <div class="mb-4">
+              <h3 class="text-xl font-bold">Graduated in Science</h3>
+              <h4 class="text-gray-700">Bankim Sardar College</h4>
+              <p class="text-gray-700">Pure Science</p>
+              <p class="text-gray-700">Completed in 01/05/2017</p>
+            </div>
+        
+            <div class="mb-4">
+              <h3 class="text-xl font-bold">GNIIT</h3>
+              <p class="text-gray-700">Java, HTML, SQL, jQuery, Data Structure, Algorithm, etc.</p>
+              <p class="text-gray-700">Completed in 01/05/2021</p>
+            </div>
+        
+          </div>
+        </section>        
         <section class="body-font "data-aos="slide-up">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
@@ -253,7 +274,7 @@
               
                 
               </div>
-              <!-- <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
+              <!-- <button class="flex mx-auto mt-16 text-white bg-color border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
             </div>
           </section>
     <section data-aos="slide-right" >
@@ -277,7 +298,7 @@
 							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
 							<div class="text-gray-600 text-sm">Status: Completed</div>
 						</div>
-						<a href="https://erationcard.in/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+						<a href="https://erationcard.in/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
 					</div>
 				</div>
 			</div>
@@ -293,7 +314,7 @@
 							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
 							<div class="text-gray-600 text-sm">Status: Completed</div>
 						</div>
-						<a href="https://taniya-ambulance.com" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+						<a href="https://taniya-ambulance.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
 					</div>
 				</div>
 			</div>
@@ -309,7 +330,7 @@
 							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
 							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
 						</div>
-						<a href="https://swwcnpsngo.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+						<a href="https://swwcnpsngo.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
 					</div>
 				</div>
 			</div>
@@ -317,19 +338,19 @@
 				<div class="bg-white rounded-lg shadow-md overflow-hidden">
 					<a href="https://canningpilesclinic.com/"><img src="images/canningpilesclinic.png" alt="Project Image" class="w-full"></a>
 					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Cannin piles clinic</h3>
+						<h3 class="text-xl font-bold mb-2">Canning piles clinic</h3>
 						<div class="text-gray-600 text-sm mb-4">a website of portfolio site of a doctor, who have own special chember</div>
 						<div class="flex items-center mb-4">
 							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
+							<div class="text-gray-600 text-sm">Status: Completed</div>
 						</div>
-						<a href="https://canningpilesclinic.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+						<a href="https://canningpilesclinic.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
 					</div>
 				</div>
 			</div>
       <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
 				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://bdcash7.com//"><img src="images/bdcash7.png" alt="Project Image" class="w-full"></a>
+					<a href="https://bdcash7.com/"><img src="images/bdcash7.png" alt="Project Image" class="w-full"></a>
 					<div class="p-6">
 						<h3 class="text-xl font-bold mb-2">Bdcash7</h3>
 						<div class="text-gray-600 text-sm mb-4">These sites all are gaming gambling site
@@ -337,41 +358,98 @@
               website</div>
 						<div class="flex items-center mb-4">
 							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+							<div class="text-gray-600 text-sm">Status: Completed</div>
+						</div>
+						<a href="https://bdcash7.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
+					</div>
+				</div>
+			</div>
+      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
+				<div class="bg-white rounded-lg shadow-md overflow-hidden">
+					<a href="https:ankoraa.com"><img src="images/ankoraa.jpg" alt="Project Image" class="w-full"></a>
+					<div class="p-6">
+						<h3 class="text-xl font-bold mb-2">Ankoraa</h3>
+						<div class="text-gray-600 text-sm mb-4">this website is under testing, this website has
+              purpose a customized gift website which has e-commerce system, this is a single vendor e-commerce website, which have 2 image editor.
+              </div>
+						<div class="flex items-center mb-4">
+							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
 							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
 						</div>
-						<a href="https://bdcash7.com/" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+						<a href="https:ankoraa.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
 					</div>
 				</div>
 			</div>
 		</div>
   </section>
-    
-    
   </div>
-    <div class="container mx-auto px-4 py-8" data-aos="fade-up">
+  <section id="about">
+    <div class="container mx-auto px-4 py-8" data-aos="fade-up"  >
       <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">About Me</h1>
-      </div>~
+        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 " >About Me</h1>
+      </div>
       <div class="flex flex-wrap -m-4">
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
-        <p>My name is Sourav Jyoti Naskar, and I am excited to introduce myself as a full-stack web developer with expertise in Python, Django, HTML, CSS, and JQuery. I have 10 months of experience working with Django and have also worked on PHP projects in the past. I am a skilled developer with a strong foundation in Java, and I have chosen to specialize in Python due to my interest in its simplicity and flexibility.
-          As a developer, I have a solid foundation in both front-end and back-end web development, and I have experience in creating responsive, dynamic, and interactive user interfaces using HTML, CSS, and JQuery. I also have experience in creating REST APIs and am familiar with hosting websites on VPS and Cloud platforms.
-          I am a creative problem solver who enjoys collaborating with other developers and stakeholders to deliver projects on time and within budget. I have a keen eye for detail, which enables me to deliver high-quality web applications that meet client requirements. I am passionate about creating innovative and functional web applications that meet the needs of users.
-          I am also currently learning React to enhance my front-end development skills and expand my skillset. I am excited to continue learning and growing as a developer and to bring my skills and experience to your team.
-          
-          Thank you for considering my application. I am excited about the opportunity to work with you and contribute to your team's success.
+      <div class="w-full md:w-full lg:w-full px-4">
+        <p>Hi, I'm Sourav Jyoti Naskar, a full-stack web developer with expertise in Python, Django, HTML, CSS, and JQuery. I have 10 months of experience working with Django and have also worked on PHP projects in the past. I have a strong foundation in Java and enjoy working with Python due to its simplicity and flexibility. I specialize in creating responsive, dynamic, and interactive user interfaces using HTML, CSS, and JQuery. I also have experience in creating REST APIs and hosting websites on VPS and Cloud platforms. I am a creative problem solver with a keen eye for detail and am passionate about creating innovative and functional web applications. Currently, I am learning React to enhance my front-end development skills. I would love to contribute my skills and experience to your team's success. Thank you for considering my application.
         </p>
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
-        <img src="images/IMG_3366.JPG" alt="Project Image" class="w-full p-4 rounded">
       </div>
+    </div>
+  </section>
+    
+    <section class="container mx-auto px-4 py-8" data-aos="fade-in" id="contact">
+      <div class="flex flex-wrap w-full flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Contact me</h1>
       </div>
-      </div>
-      <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-4">
-          <p class="text-center">&copy; 2023 Sourav Jyoti Naskar. All rights reserved.</p>
+      <div class="mb-8  justify-center sm:py-12">
+        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+          <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+            <div class="">
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
+              <div class="flex items-center space-x-4 mb-4">
+                <i class="fas fa-phone-alt text-gray-400"></i>
+                <a href="tel:+917001159812"><span class="text-gray-600 font-semibold">+91 700-115-9812</span></a>
+              </div>
+              <div class="flex items-center space-x-4 mb-4">
+                <i class="fas fa-envelope text-gray-400"></i>
+                <a href="mailto:souravjoyti@gmail.com" class="text-gray-600 font-semibold hover:underline">souravjoyti@gmail.com</a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <i class="fas fa-map-marker-alt text-gray-400"></i>
+                <span class="text-gray-600 font-semibold">No 1 Dighirpar , Canning, West Bengal , India</span>
+              </div>
+            </div>
+            <!-- <h1 class="text-3xl font-bold mb-6 pt-2">Get in Touch</h1>
+            <form method = "post" >
+              <div class="mb-6">
+                <label for="name" class="block mb-2 font-semibold text-gray-600">Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block mb-2 font-semibold text-gray-600">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block mb-2 font-semibold text-gray-600">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button type="submit" class="px-4 py-2 text-white bg-color hover:bg-blue-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Send</button>
+              </div>
+            </form> -->
+          </div>
         </div>
-      </footer>          
+      </div>
+
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto px-4">
+        <p class="text-center">&copy; 2023 Sourav Jyoti Naskar. All rights reserved.</p>
+      </div>
+    </footer>          
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="style.js" async defer></script>
     
