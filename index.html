@@ -1,467 +1,412 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title id="titel">portfolio | Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.0/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-        
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourav Jyoti Naskar | Premium Portfolio</title>
+  <meta name="description" content="Official portfolio of Sourav Jyoti Naskar, Python Backend Developer and AWS Cloud Engineer." />
+  <style>
+    :root {
+      --bg: #070b17;
+      --bg-soft: #0e1730;
+      --surface: rgba(15, 23, 45, 0.74);
+      --surface-2: rgba(21, 34, 64, 0.86);
+      --text: #edf3ff;
+      --muted: #a5b6dc;
+      --brand: #78a8ff;
+      --brand-2: #6ff2d3;
+      --border: rgba(125, 157, 225, 0.3);
+      --ring: rgba(122, 160, 255, 0.4);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    }
 
-    </head>
-    <body>
-          <header>
-            <nav class="shadow-md 
-            fixed  z-10">
-                <label><img src="images/hamberger.webp" id="hamberger" class="hamberger"></label>
-                <label class="logo"><a href =  "#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
-                <ul id="navigation">
-                    <li><a href="#hero" id="home_btn">home</a></li>
-                    <li><a href="#projects" id="project_btn">projects</a></li>
-                    <li><a href="#education" id="eduaction_btn">education</a></li>
-                    <li><a href="#about" id ="about_btn">about</a></li>
-                    <li><a href="#contact" id="contact_btn">contact</a></li>
-                </ul>
-               
-            </nav>
-          </header>  
-    <div class="child" style="display:none;">
-        <div class="close-bottom"><img src="images/cross.webp" id="cross" class="cross"></div>
-        <div class="mobile-menu">
-            <ul class="navigation">
-                <li><a href="#hero" id="home_btn1">home</a></li>
-                <li><a href="#projects" id="project_btn1">projects</a></li>
-                <li><a href="#education" id="eduaction_btn1">edcation</a></li>
-                <li><a href="#about" id ="about_btn1">about</a></li>
-                <li><a href="#contact" id="contact_btn1">contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero" id="hero" data-aos="fade-up">
-        <div class="container mx-auto px-4 py-56 animate__animated animate__fadeIn hero-text">
-            <h1 class="text-4xl text-white font-bold mb-2">Sourav Jyoti Naskar</h1>
-            <h2 class=" text-3xl text-gray-300 font-bold mb-2">I am <span class="typed-text-output "></span></h2>
-            <div class="typed-text hidden">Web Designer, Web Developer, Front-End Dev, Full-Stack Dev</div>
-            <button onclick="window.location.href='images/SouravJyotiNaskarCv.pdf';"   class="bg-color  mb-5 pr-50 hover:bg-blue-500 rounded text-white font-bold p-4 rounded">
-                View CV
-            </button>
-            <button onclick="window.location.href='tel:+917001159812';" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white p-4 border border-white hover:border-transparent rounded">
-                Contact me for Your project
-            </button>
-        </div>
-    </div>
-    <div class="container mx-auto my-8 pl-2 pr-2" data-aos="fade-right">
-            <!-- <div class="flex justify-between mb-8">
-                <h1 class="text-3xl font-bold">My Skills and Experience</h1>
-                <a href="#"id="link" class="bg-color hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Download CV</a>
-            </div> -->
-    
-            <!-- Skill Section -->
-            <div class="mb-8">
-                
-                <div class="flex flex-wrap justify-between">
-                    
-                    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 mb-4">
-                        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Python</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-red-500 absolute" style="width: 75%;"></div>
-                            </div>
-                            <div class="text-right mt-1">75%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Django</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-color absolute" style="width: 90%;"></div>
-                            </div>
-                            <div class="text-right mt-1">90%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Html</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-color absolute" style="width: 95%;"></div>
-                            </div>
-                            <div class="text-right mt-1">95%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Css</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-gray-500 absolute" style="width: 85%;"></div>
-                            </div>
-                            <div class="text-right mt-1">85%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2">
-                            <h3 class="text-xl font-bold mb-2">Jquery</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-pink-500 absolute" style="width: 75%;"></div>
-                            </div>
-                            <div class="text-right mt-1">75%</div>
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 mb-4 pl-2 pr-2">
-                      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-                        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Experience</h1>
-                      </div>
-			   <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Heliware- May 2023 to Present</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS, and JavaScript Created REST APIs for efficient communication between applications</li>
-                              <li>Created REST APIs for efficient communication between applications</li>
-			       <li>create react app and use mongo db for queries</li>
-                          </ul>
-			   </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Azmuth Technologies Pvt Ltd - October 2022 to may 2023</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS, and JavaScript Created REST APIs for efficient communication between applications</li>
-                              <li>Created REST APIs for efficient communication between applications</li>
-                          </ul>
-                        </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Ufx Studio - june 2022 to August 2022</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS,booststarp and JavaScript</li>
-                             
-                          </ul>
-                        </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Front end Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Kamprik Software Development Pvt Ltd  - December 2021 to january 2022</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using HTML, CSS,Bootstrap and JavaScript </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="bg-gray-100 py-8" id ="education">
-          <div class="container mx-auto px-2">
-            <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-              <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Education</h1>
-            </div>
-        
-            <div class="mb-4">
-              <h3 class="text-xl font-bold">Graduated in Science</h3>
-              <h4 class="text-gray-700">Bankim Sardar College</h4>
-              <p class="text-gray-700">Pure Science</p>
-              <p class="text-gray-700">Completed in 01/05/2017</p>
-            </div>
-        
-            <div class="mb-4">
-              <h3 class="text-xl font-bold">GNIIT</h3>
-              <p class="text-gray-700">Java, HTML, SQL, jQuery, Data Structure, Algorithm, etc.</p>
-              <p class="text-gray-700">Completed in 01/05/2021</p>
-            </div>
-        
-          </div>
-        </section>        
-        <section class="body-font "data-aos="slide-up">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-                <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">My Services</h1>
-              </div>
-              <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/2 md:w-1/2 sm:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4"> 
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g >
-                        <path fill="#444444" d="M45,46H3c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h42c1.105,0,2,0.895,2,2v36C47,45.105,46.105,46,45,46z&#10;&#9;"/>
-                        <rect x="3" y="13" fill="#FFFFFF" width="42" height="31"/>
-                        <circle fill="#E86C60" cx="4.5" cy="9.5" r="1.5"/>
-                        <circle fill="#EFD358" cx="9.5" cy="9.5" r="1.5"/>
-                        <circle fill="#72C472" cx="14.5" cy="9.5" r="1.5"/>
-                        <path fill="#A67C52" d="M38.172,2.828c-1.105-1.105-2.895-1.105-4,0L21.536,15.464c0.988,0.181,1.899,0.65,2.625,1.376&#10;&#9;c0.726,0.726,1.194,1.636,1.375,2.624L38.172,6.828C39.276,5.724,39.276,3.933,38.172,2.828z"/>
-                        <path fill="#E6E6E6" d="M21.536,15.464L16,21l4,4l5.536-5.536c-0.181-0.988-0.65-1.899-1.375-2.624&#10;&#9;C23.435,16.115,22.524,15.646,21.536,15.464z"/>
-                        <path fill="#E86C60" d="M41,41H7c-0.552,0-1-0.448-1-1v-7c0-0.552,0.448-1,1-1h34c0.552,0,1,0.448,1,1v7C42,40.552,41.552,41,41,41z&#10;&#9;"/>
-                        <path fill="#444444" d="M20.863,27.192c0.89-0.934,1.387-2.146,1.387-3.441c0-1.336-0.52-2.591-1.464-3.535s-2.2-1.465-3.536-1.465&#10;&#9;c-1.336,0-2.591,0.521-3.536,1.465c-1.056,1.056-1.467,3.263-1.623,5.089c1.596,0.415,2.689,0.727,3.846,1.04&#10;&#9;C17.368,26.73,18.844,27.132,20.863,27.192z"/>
-                        <path fill="#E86C60" d="M12.008,28.02l0.025,0.948l0.947,0.025C13.109,28.996,13.304,29,13.552,29c1.667,0,5.687-0.168,7.233-1.715&#10;&#9;c0.029-0.029,0.049-0.064,0.077-0.094c-3.56-0.974-5.061-2.161-8.771-1.888C11.985,26.549,11.997,27.618,12.008,28.02z"/>
-                        </g></svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2 font-bold">Website Design</h2>
-                    <ul class="grid grid-cols-1 md:grid-cols-2">
-                      <li class="bg-white ">
-                          <ul class="list-disc">
-                              <li>Custom website design with color matching</li>
-                              <li>Responsive design for all devices</li>
-                              <li>Search engine optimization</li>
-                              <li>User-friendly interface design</li>
-                          </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="xl:w-1/2 sm:w-1/2 md:w-1/2 p-4 ">
-                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 79 79" style="enable-background:new 0 0 79 79;" xml:space="preserve">
-                   <style type="text/css">
-                     .st0{display:none;}
-                     .st1{display:inline;}
-                     .st2{fill:none;}
-                     .st3{fill:#EFD620;}
-                   </style>
-                   <g id="Layer_1" class="st0">
-                     <g id="Layer_3" class="st1">
-                       <rect class="st2" width="79" height="79"/>
-                     </g>
-                     <g id="Layer_1_1_" class="st1">
-                       <g>
-                         <path class="st3" d="M75,4v71H4V4H75 M79,0H0v79h79V0L79,0z"/>
-                       </g>
-                     </g>
-                     <g id="Layer_2_1_" class="st1">
-                       <g>
-                         <path class="st3" d="M28.3,51.7L5.8,41.2v-2.4l22.5-12v3.7L10,39.7l18.3,8.2V51.7z"/>
-                         <path class="st3" d="M47.8,21.2L35.1,57.8h-3.9l12.7-36.5L47.8,21.2L47.8,21.2z"/>
-                         <path class="st3" d="M50.7,47.9L69,39.8l-18.3-9.3v-3.7l22.5,12v2.4L50.7,51.7V47.9z"/>
-                       </g>
-                     </g>
-                   </g>
-                   <g id="Layer_2">
-                     <g>
-                       <path d="M5.9,39.5l19.9,8.2L24.3,52L0.1,41.7v-4.5L24.3,27l1.5,4.3L5.9,39.5z"/>
-                       <path d="M32.7,66.6h-5.3l19-54.2h5.2L32.7,66.6z"/>
-                       <path d="M53.2,31.3l1.5-4.3l24.2,10.2v4.5L54.7,52l-1.5-4.3l19.9-8.2L53.2,31.3z"/>
-                     </g>
-                   </g>
-                     </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Web Development</h2>
-                <ul class="grid grid-cols-1 md:grid-cols-2">  
-                  <li class="bg-white">
-                      <ul class="list-disc ">
-                          <li>Custom web application development</li>
-                          <li>Front-end development using modern frameworks</li>
-                          <li>Back-end development with APIs</li>
-                          <li>E-commerce solutions</li>
-                      </ul>
-                  </li>
-                </ul>
-                  </div>
-                </div>
-                <!-- <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                      </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-                  </div>
-                </div>
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                      </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-                  </div>
-                </div> -->
-              
-                
-              </div>
-              <!-- <button class="flex mx-auto mt-16 text-white bg-color border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
-            </div>
-          </section>
-    <section data-aos="slide-right" >
-      <section class="container mx-auto my-8 p-4" id ="projects">
-        <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-          <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Working On Projects which are Live</h1>
-		    </div>
+    html[data-theme="light"] {
+      --bg: #f3f7ff;
+      --bg-soft: #e7eeff;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-2: rgba(243, 247, 255, 0.92);
+      --text: #081531;
+      --muted: #475985;
+      --brand: #1f57df;
+      --brand-2: #0f9f95;
+      --border: rgba(40, 81, 175, 0.22);
+      --ring: rgba(56, 107, 226, 0.25);
+      --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
+    }
 
-		<!-- Project Showcase -->
-		<div class="flex flex-wrap justify-between "  >
-			<div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white hover:bg-gray-200 rounded-lg shadow-xl shadow-[#50d71e] overflow-hidden">
-					<a href="https://erationcard.in/"><img src="images/erationcard.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">e-Ration card</h3>
-						<div class="text-gray-600 text-sm mb-4">this website will give you an online digital e-ration card
-              order website, it has 2 dashboards, one is for the
-              admin, and one for the manager.
-              </div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://erationcard.in/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://taniya-ambulance.com"><img src="images/taniya-ambulance.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Taniya Ambulance Service</h3>
-						<div class="text-gray-600 text-sm mb-4">This is a website , which have dynamic content , this
-              is a portfolio page of ambulance and anybody can
-              book ambulance from site , by book appoinment.</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://taniya-ambulance.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://swwcnpsngo.com/"><img src="images/swwcnpsngo.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Swwcnps Ngo</h3>
-						<div class="text-gray-600 text-sm mb-4">this is a simple ngo website, any body can donate money for women and children,
-              and have some blogs. and full of dayanamic
-              website</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
-						</div>
-						<a href="https://swwcnpsngo.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://canningpilesclinic.com/"><img src="images/canningpilesclinic.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Canning piles clinic</h3>
-						<div class="text-gray-600 text-sm mb-4">a website of portfolio site of a doctor, who have own special chember</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://canningpilesclinic.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://bdcash7.com/"><img src="images/bdcash7.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Bdcash7</h3>
-						<div class="text-gray-600 text-sm mb-4">These sites all are gaming gambling site
-              which have 6 different type game.
-              website</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://bdcash7.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https:ankoraa.com"><img src="images/ankoraa.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Ankoraa</h3>
-						<div class="text-gray-600 text-sm mb-4">this website is under testing, this website has
-              purpose a customized gift website which has e-commerce system, this is a single vendor e-commerce website, which have 2 image editor.
-              </div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
-						</div>
-						<a href="https:ankoraa.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-		</div>
-  </section>
-  </div>
-  <section id="about">
-    <div class="container mx-auto px-4 py-8" data-aos="fade-up"  >
-      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 " >About Me</h1>
-      </div>
-      <div class="flex flex-wrap -m-4">
-      <div class="w-full md:w-full lg:w-full px-4">
-        <p>Hi, I'm Sourav Jyoti Naskar, a full-stack web developer with expertise in Python, Django, HTML, CSS, and JQuery. I have 2+ years of experience working with Django and have also worked on PHP projects in the past. I have a strong foundation in Java and enjoy working with Python due to its simplicity and flexibility. I specialize in creating responsive, dynamic, and interactive user interfaces using HTML, CSS, and JQuery. I also have experience in creating REST APIs and hosting websites on VPS and Cloud platforms. I am a creative problem solver with a keen eye for detail and am passionate about creating innovative and functional web applications. Currently, I am learning React to enhance my front-end development skills. I would love to contribute my skills and experience to your team's success. Thank you for considering my application.
-        </p>
-      </div>
+    @media (prefers-color-scheme: light) {
+      html[data-theme="auto"] {
+        --bg: #f3f7ff;
+        --bg-soft: #e7eeff;
+        --surface: rgba(255, 255, 255, 0.86);
+        --surface-2: rgba(243, 247, 255, 0.92);
+        --text: #081531;
+        --muted: #475985;
+        --brand: #1f57df;
+        --brand-2: #0f9f95;
+        --border: rgba(40, 81, 175, 0.22);
+        --ring: rgba(56, 107, 226, 0.25);
+        --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", "Poppins", Roboto, system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background:
+        radial-gradient(1300px 700px at 0% -8%, rgba(120,168,255,0.24), transparent 70%),
+        radial-gradient(1000px 700px at 100% -12%, rgba(111,242,211,0.2), transparent 70%),
+        var(--bg);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .container { width: min(1160px, 92%); margin: 0 auto; }
+    section { padding: 58px 0; }
+
+    .glass {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      transition: transform .25s ease, border-color .35s ease, background .35s ease;
+    }
+
+    .glass:hover { transform: translateY(-2px); }
+
+    .section-title { font-size: clamp(1.3rem, 3vw, 2rem); margin: 0 0 16px; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 72%, transparent);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 0;
+    }
+
+    .brand { font-weight: 800; letter-spacing: .25px; }
+    .brand span { color: var(--brand-2); }
+
+    .actions { display: flex; gap: 10px; align-items: center; }
+
+    .btn {
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .2s ease, border-color .2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover { transform: translateY(-1px); border-color: var(--brand); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .hero-info { padding: 28px; }
+    .hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; }
+
+    .role {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    .summary { color: var(--muted); margin: 16px 0 20px; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 14px 0 6px;
+    }
+
+    .tag {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: .9rem;
+      color: var(--muted);
+      background: var(--surface-2);
+    }
+
+    .hero-photo {
+      overflow: hidden;
+      position: relative;
+      min-height: 340px;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      filter: saturate(1.05) contrast(1.02);
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      box-shadow: inset 0 -90px 120px rgba(0,0,0,.35);
+      pointer-events: none;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px;
+    }
+
+    .contact-links a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+      padding: 10px 12px;
+      font-size: .95rem;
+    }
+
+    .grid { display: grid; gap: 16px; }
+    .two-col { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .three-col { grid-template-columns: repeat(3,minmax(0,1fr)); }
+
+    .card { padding: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    .card h3 { margin: 0 0 8px; }
+
+    .project-card {
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      transition: transform .25s ease;
+    }
+
+    .project-card:hover { transform: translateY(-3px); }
+
+    .project-card img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-body { padding: 14px; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: .78rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 9px;
+      color: var(--muted);
+      margin-right: 6px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item {
+      border-left: 2px solid var(--ring);
+      margin-left: 6px;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 0 36px;
+    }
+
+    @media (max-width: 980px) {
+      .hero, .three-col { grid-template-columns: 1fr; }
+      .two-col, .contact-links { grid-template-columns: 1fr; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">Sourav Jyoti Naskar<span> • Portfolio</span></div>
+      <div class="actions">
+        <a class="btn" href="images/SouravJyotiNaskarCv.pdf" target="_blank" rel="noopener">View CV</a>
+        <button id="themeToggle" class="btn" type="button">Theme: Auto</button>
       </div>
     </div>
-  </section>
-    
-    <section class="container mx-auto px-4 py-8" data-aos="fade-in" id="contact">
-      <div class="flex flex-wrap w-full flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Contact me</h1>
-      </div>
-      <div class="mb-8  justify-center sm:py-12">
-        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-          <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-          <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-            <div class="">
-              <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
-              <div class="flex items-center space-x-4 mb-4">
-                <i class="fas fa-phone-alt text-gray-400"></i>
-                <a href="tel:+917001159812"><span class="text-gray-600 font-semibold">+91 700-115-9812</span></a>
-              </div>
-              <div class="flex items-center space-x-4 mb-4">
-                <i class="fas fa-envelope text-gray-400"></i>
-                <a href="mailto:souravjoyti@gmail.com" class="text-gray-600 font-semibold hover:underline">souravjoyti@gmail.com</a>
-              </div>
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-map-marker-alt text-gray-400"></i>
-                <span class="text-gray-600 font-semibold">No 1 Dighirpar , Canning, West Bengal , India</span>
-              </div>
-            </div>
-            <!-- <h1 class="text-3xl font-bold mb-6 pt-2">Get in Touch</h1>
-            <form method = "post" >
-              <div class="mb-6">
-                <label for="name" class="block mb-2 font-semibold text-gray-600">Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-              </div>
-              <div class="mb-6">
-                <label for="email" class="block mb-2 font-semibold text-gray-600">Email</label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-              </div>
-              <div class="mb-6">
-                <label for="message" class="block mb-2 font-semibold text-gray-600">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
-              </div>
-              <div class="flex justify-end">
-                <button type="submit" class="px-4 py-2 text-white bg-color hover:bg-blue-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Send</button>
-              </div>
-            </form> -->
-          </div>
-        </div>
-      </div>
+  </header>
 
+  <main class="container">
+    <section class="hero">
+      <article class="glass hero-info">
+        <h1>SOURAV JYOTI NASKAR</h1>
+        <span class="role">Python Backend Developer | AWS Cloud Engineer</span>
+        <p class="summary">Results-driven Python Backend Developer and AWS Cloud Engineer with 4+ years of hands-on experience designing, deploying, and scaling web applications and cloud-native infrastructure. Strong expertise across Django, DRF, AWS services, Docker, CI/CD, and automation workflows.</p>
+
+        <div class="contact-links">
+          <a href="mailto:souravjoyti@gmail.com">📧 souravjoyti@gmail.com</a>
+          <a href="tel:+919851350560">📞 +91-9851350560</a>
+          <a href="tel:+917001159812">📱 +91-7001159812</a>
+          <a href="https://linkedin.com/in/souravjyoti-naskar" target="_blank" rel="noopener">🔗 LinkedIn Profile</a>
+          <a href="https://github.com/SouravJyoti2412" target="_blank" rel="noopener">💻 GitHub Profile</a>
+          <a href="#projects">🚀 Project Showcase</a>
+        </div>
+
+        <div class="meta">
+          <span class="tag">Kolkata, West Bengal, India</span>
+          <span class="tag">Django / DRF Specialist</span>
+          <span class="tag">AWS Infrastructure Engineer</span>
+          <span class="tag">Linux & Automation</span>
+        </div>
+      </article>
+
+      <article class="glass hero-photo">
+        <img src="images/IMG_3366.webp" alt="Sourav Jyoti Naskar profile photo" />
+      </article>
     </section>
 
-
-    <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-4">
-        <p class="text-center">&copy; 2023 Sourav Jyoti Naskar. All rights reserved.</p>
+    <section>
+      <h2 class="section-title">Core Technical Skills</h2>
+      <div class="grid three-col">
+        <article class="glass card"><h3>Languages</h3><p>Python, JavaScript, SQL, HTML5, CSS3</p></article>
+        <article class="glass card"><h3>Backend</h3><p>Django, DRF, Celery, Redis, REST API Design, BeautifulSoup, Scrapy</p></article>
+        <article class="glass card"><h3>Frontend</h3><p>React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p></article>
+        <article class="glass card"><h3>AWS Services</h3><p>EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, Route 53, CloudWatch, SSM</p></article>
+        <article class="glass card"><h3>DevOps</h3><p>Docker, CI/CD, Git, GitHub, AWS CLI, Snapshots, AMI, backup recovery</p></article>
+        <article class="glass card"><h3>Databases & OS</h3><p>MySQL, PostgreSQL, Redis, DynamoDB, Linux, Unix, Ubuntu, Windows</p></article>
       </div>
-    </footer>          
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="style.js" async defer></script>
-    
-    
-    </body>
+    </section>
+
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="glass card">
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer & AWS Cloud Engineer — MSU</h3>
+          <p>June 2024 – Present, Kolkata, India</p>
+          <ul>
+            <li>Maintaining 13 production websites with feature and performance improvements.</li>
+            <li>Built a custom CMS with Django + Next.js to accelerate content publishing.</li>
+            <li>Optimised EC2 instances, boosting traffic handling by 20%.</li>
+            <li>Configured S3 policies, IAM roles, Route 53 DNS, security groups, and backups.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer — Heliware</h3>
+          <p>May 2023 – May 2024, Kolkata, India</p>
+          <ul>
+            <li>Built Helibucket cloud storage platform as lead developer.</li>
+            <li>Reduced response time by 10% with Redis-based optimization.</li>
+            <li>Won Employee of the Month (October 2023).</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Full Stack Developer — Azmuth Technologies</h3>
+          <p>Feb 2022 – May 2023, Kolkata, India</p>
+          <ul>
+            <li>Delivered dynamic websites and DRF APIs including E-Ration and Ankoraa.</li>
+            <li>Integrated payment gateway and cut paperwork by 75% in E-Ration flow.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Project Highlights</h2>
+      <div class="grid three-col">
+        <article class="project-card"><img src="images/ankoraa.webp" alt="Ankoraa project preview" /><div class="project-body"><h3>Ankoraa</h3><span class="pill">Private</span><span class="pill">HTML/Django</span><p>Single-vendor ecommerce platform with browsing, cart flow, and checkout experience.</p></div></article>
+        <article class="project-card"><img src="images/erationcard.webp" alt="E-Ration project preview" /><div class="project-body"><h3>E-Ration</h3><span class="pill">Private</span><span class="pill">Django/DRF</span><p>Digital ration-card ordering with payment integration and major paperwork reduction.</p></div></article>
+        <article class="project-card"><img src="images/swwcnpsngo.webp" alt="MSU and cloud projects preview" /><div class="project-body"><h3>MSU / Cloud Work</h3><span class="pill">Production</span><span class="pill">AWS</span><p>Multi-site production stack, cloud storage logic, and infrastructure reliability work.</p></div></article>
+        <article class="project-card"><img src="images/taniya-ambulance.webp" alt="Service portal project preview" /><div class="project-body"><h3>nodewave-revamp</h3><span class="pill">Public</span><span class="pill">HTML</span><p>Modernized UI/UX revamp effort focused on cleaner structure and better responsiveness.</p></div></article>
+        <article class="project-card"><img src="images/canningpilesclinic.webp" alt="Healthcare website preview" /><div class="project-body"><h3>hrms_website / cmd-our-team-page</h3><span class="pill">Mixed</span><span class="pill">HTML/CSS</span><p>Corporate and team presentation pages with practical responsive layout implementation.</p></div></article>
+        <article class="project-card"><img src="images/bdcash7.webp" alt="Game and utility projects preview" /><div class="project-body"><h3>bdcash7 + utilities</h3><span class="pill">Public</span><span class="pill">Django/Game</span><p>Interactive gaming and utility-style builds including calculators, task tools, and APIs.</p></div></article>
+      </div>
+
+      <div class="glass card" style="margin-top:16px;">
+        <h3 style="margin-top:0;">Additional Repository Glimpses</h3>
+        <p style="color:var(--muted); margin-bottom:8px;">nodebase-telegram-mini-app, dhpe-erp-backend, dhpe-erp-frontend, stenosol, nodewave-game, nodewave-cloud, employee-monitoring, ibdaad-it, intelactiv, jwellery-pos, india-mart-data-scrapper-extension, emplyee-task-assign-real-time-notification, indian-chiken-express, amuzeum-lab, user-organasation-tree, emi-calculator, product-catelog-curd, Ufx_studio, mobile_cover_website, luduchash7, ancifab, and portfolio.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education & Achievements</h2>
+      <div class="grid two-col">
+        <article class="glass card">
+          <h3>GNIIT Diploma — Full Stack Development</h3>
+          <p>NIIT, Garia, Kolkata | Oct 2017 – May 2021</p>
+        </article>
+        <article class="glass card">
+          <h3>Bachelor's Degree</h3>
+          <p>Calcutta University, Kolkata | June 2013 – June 2017</p>
+        </article>
+        <article class="glass card">
+          <h3>Award</h3>
+          <p>Employee of the Month — Heliware (October 2023)</p>
+        </article>
+        <article class="glass card">
+          <h3>Languages</h3>
+          <p>English | Hindi | Bengali</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Sourav Jyoti Naskar • Python Backend Developer • AWS Cloud Engineer
+  </footer>
+
+  <script>
+    (() => {
+      const key = "theme-preference";
+      const modes = ["auto", "dark", "light"];
+      const button = document.getElementById("themeToggle");
+      const root = document.documentElement;
+
+      const saved = localStorage.getItem(key);
+      const initial = modes.includes(saved) ? saved : "auto";
+      root.setAttribute("data-theme", initial);
+      button.textContent = `Theme: ${initial[0].toUpperCase() + initial.slice(1)}`;
+
+      button.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") || "auto";
+        const next = modes[(modes.indexOf(current) + 1) % modes.length];
+        root.setAttribute("data-theme", next);
+        localStorage.setItem(key, next);
+        button.textContent = `Theme: ${next[0].toUpperCase() + next.slice(1)}`;
+      });
+    })();
+  </script>
+</body>
 </html>
