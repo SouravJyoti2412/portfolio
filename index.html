@@ -3,315 +3,401 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sourav Jyoti Naskar | Portfolio 2026</title>
-  <meta name="description" content="Python Backend Developer & AWS Cloud Engineer portfolio of Sourav Jyoti Naskar." />
+  <title>Sourav Jyoti Naskar | Premium Portfolio</title>
+  <meta name="description" content="Official portfolio of Sourav Jyoti Naskar, Python Backend Developer and AWS Cloud Engineer." />
   <style>
     :root {
-      --bg: #0b1020;
-      --bg-soft: #101935;
-      --surface: rgba(18, 29, 58, 0.75);
-      --surface-2: rgba(28, 42, 79, 0.75);
-      --text: #eaf1ff;
-      --muted: #a9b7d9;
-      --brand: #6ea8ff;
-      --brand-2: #6dffe3;
-      --border: rgba(140, 166, 222, 0.28);
-      --shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+      --bg: #070b17;
+      --bg-soft: #0e1730;
+      --surface: rgba(15, 23, 45, 0.74);
+      --surface-2: rgba(21, 34, 64, 0.86);
+      --text: #edf3ff;
+      --muted: #a5b6dc;
+      --brand: #78a8ff;
+      --brand-2: #6ff2d3;
+      --border: rgba(125, 157, 225, 0.3);
+      --ring: rgba(122, 160, 255, 0.4);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
     }
 
     html[data-theme="light"] {
-      --bg: #f4f7ff;
-      --bg-soft: #e9efff;
-      --surface: rgba(255, 255, 255, 0.8);
-      --surface-2: rgba(244, 249, 255, 0.9);
-      --text: #0b1a39;
-      --muted: #4d5f87;
-      --brand: #225ce6;
-      --brand-2: #0496a8;
-      --border: rgba(37, 83, 182, 0.2);
-      --shadow: 0 12px 30px rgba(39, 61, 110, 0.12);
+      --bg: #f3f7ff;
+      --bg-soft: #e7eeff;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-2: rgba(243, 247, 255, 0.92);
+      --text: #081531;
+      --muted: #475985;
+      --brand: #1f57df;
+      --brand-2: #0f9f95;
+      --border: rgba(40, 81, 175, 0.22);
+      --ring: rgba(56, 107, 226, 0.25);
+      --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
     }
 
     @media (prefers-color-scheme: light) {
       html[data-theme="auto"] {
-        --bg: #f4f7ff;
-        --bg-soft: #e9efff;
-        --surface: rgba(255, 255, 255, 0.8);
-        --surface-2: rgba(244, 249, 255, 0.9);
-        --text: #0b1a39;
-        --muted: #4d5f87;
-        --brand: #225ce6;
-        --brand-2: #0496a8;
-        --border: rgba(37, 83, 182, 0.2);
-        --shadow: 0 12px 30px rgba(39, 61, 110, 0.12);
+        --bg: #f3f7ff;
+        --bg-soft: #e7eeff;
+        --surface: rgba(255, 255, 255, 0.86);
+        --surface-2: rgba(243, 247, 255, 0.92);
+        --text: #081531;
+        --muted: #475985;
+        --brand: #1f57df;
+        --brand-2: #0f9f95;
+        --border: rgba(40, 81, 175, 0.22);
+        --ring: rgba(56, 107, 226, 0.25);
+        --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
       }
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      font-family: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
-      background:
-        radial-gradient(1200px 600px at 5% -10%, rgba(110,168,255,0.23), transparent 70%),
-        radial-gradient(1000px 600px at 95% 0%, rgba(109,255,227,0.2), transparent 70%),
-        var(--bg);
+      font-family: "Inter", "Segoe UI", "Poppins", Roboto, system-ui, sans-serif;
       color: var(--text);
-      transition: background 0.45s ease, color 0.45s ease;
       line-height: 1.6;
+      background:
+        radial-gradient(1300px 700px at 0% -8%, rgba(120,168,255,0.24), transparent 70%),
+        radial-gradient(1000px 700px at 100% -12%, rgba(111,242,211,0.2), transparent 70%),
+        var(--bg);
+      transition: background 0.4s ease, color 0.4s ease;
     }
 
-    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .container { width: min(1160px, 92%); margin: 0 auto; }
+    section { padding: 58px 0; }
 
     .glass {
       background: var(--surface);
       border: 1px solid var(--border);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
       box-shadow: var(--shadow);
-      transition: background 0.35s ease, border-color 0.35s ease;
+      transition: transform .25s ease, border-color .35s ease, background .35s ease;
     }
 
-    header {
+    .glass:hover { transform: translateY(-2px); }
+
+    .section-title { font-size: clamp(1.3rem, 3vw, 2rem); margin: 0 0 16px; }
+
+    .topbar {
       position: sticky;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(8px);
-      background: color-mix(in srgb, var(--bg) 70%, transparent);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 72%, transparent);
     }
 
-    nav {
+    .topbar-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 14px 0;
-      gap: 10px;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 0;
     }
 
-    .brand { font-size: 1.1rem; font-weight: 700; letter-spacing: .3px; }
+    .brand { font-weight: 800; letter-spacing: .25px; }
     .brand span { color: var(--brand-2); }
 
-    .theme-btn {
+    .actions { display: flex; gap: 10px; align-items: center; }
+
+    .btn {
       border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
       border-radius: 999px;
       padding: 9px 14px;
-      font: inherit;
-      color: var(--text);
-      background: var(--surface-2);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .2s ease, border-color .2s ease;
       cursor: pointer;
-      transition: transform .2s ease, background .35s ease;
     }
-    .theme-btn:hover { transform: translateY(-1px); }
 
-    section { padding: 58px 0; }
+    .btn:hover { transform: translateY(-1px); border-color: var(--brand); }
 
     .hero {
-      padding-top: 36px;
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 24px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 22px;
       align-items: stretch;
     }
 
-    .hero-card, .contact-card { padding: 28px; }
+    .hero-info { padding: 28px; }
+    .hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; }
 
-    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.2; margin: 0; }
-    h2 { font-size: clamp(1.3rem, 3.4vw, 2rem); margin: 0 0 12px; }
-    h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    .role {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--brand);
+    }
 
-    .lead { color: var(--muted); margin: 16px 0 22px; }
-    .role { color: var(--brand); font-weight: 600; }
+    .summary { color: var(--muted); margin: 16px 0 20px; }
 
-    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-    .chip {
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 14px 0 6px;
+    }
+
+    .tag {
       border: 1px solid var(--border);
       border-radius: 999px;
-      padding: 8px 13px;
-      color: var(--muted);
+      padding: 7px 12px;
       font-size: .9rem;
+      color: var(--muted);
       background: var(--surface-2);
     }
 
-    .links a {
-      display: inline-block;
-      margin-right: 14px;
-      color: var(--brand);
-      text-decoration: none;
-      font-weight: 600;
+    .hero-photo {
+      overflow: hidden;
+      position: relative;
+      min-height: 340px;
     }
 
-    .grid { display: grid; gap: 18px; }
-    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      filter: saturate(1.05) contrast(1.02);
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      box-shadow: inset 0 -90px 120px rgba(0,0,0,.35);
+      pointer-events: none;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 10px;
+    }
+
+    .contact-links a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+      padding: 10px 12px;
+      font-size: .95rem;
+    }
+
+    .grid { display: grid; gap: 16px; }
+    .two-col { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .three-col { grid-template-columns: repeat(3,minmax(0,1fr)); }
 
     .card { padding: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    .card h3 { margin: 0 0 8px; }
 
-    .muted { color: var(--muted); }
-
-    .timeline-item {
-      border-left: 2px solid var(--border);
-      padding-left: 16px;
-      margin-left: 6px;
-      margin-bottom: 20px;
+    .project-card {
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      transition: transform .25s ease;
     }
 
-    ul { margin: 8px 0 0; padding-left: 18px; }
+    .project-card:hover { transform: translateY(-3px); }
+
+    .project-card img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-body { padding: 14px; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: .78rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 9px;
+      color: var(--muted);
+      margin-right: 6px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item {
+      border-left: 2px solid var(--ring);
+      margin-left: 6px;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
 
     footer {
       border-top: 1px solid var(--border);
-      padding: 26px 0 40px;
-      color: var(--muted);
       text-align: center;
+      color: var(--muted);
+      padding: 22px 0 36px;
     }
 
-    @media (max-width: 920px) {
-      .hero, .two-col { grid-template-columns: 1fr; }
-      section { padding: 44px 0; }
-      .hero-card, .contact-card { padding: 22px; }
+    @media (max-width: 980px) {
+      .hero, .three-col { grid-template-columns: 1fr; }
+      .two-col, .contact-links { grid-template-columns: 1fr; }
+      section { padding: 48px 0; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">Sourav<span>_2026</span></div>
-        <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme mode">Theme: Auto</button>
-      </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">Sourav Jyoti Naskar<span> • Portfolio</span></div>
+      <div class="actions">
+        <a class="btn" href="images/SouravJyotiNaskarCv.pdf" target="_blank" rel="noopener">View CV</a>
+        <button id="themeToggle" class="btn" type="button">Theme: Auto</button>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <article class="glass hero-card">
+      <article class="glass hero-info">
         <h1>SOURAV JYOTI NASKAR</h1>
-        <p class="role">Python Backend Developer | AWS Cloud Engineer</p>
-        <p class="lead">Results-driven engineer with 4+ years of experience building scalable web systems and cloud infrastructure using Django, DRF, and AWS services. Focused on performance, reliability, and automation-first delivery.</p>
-        <div class="links">
-          <a href="mailto:souravjoyti@gmail.com">souravjoyti@gmail.com</a>
-          <a href="tel:+919851350560">+91-9851350560</a>
-          <a href="tel:+917001159812">+91-7001159812</a>
+        <span class="role">Python Backend Developer | AWS Cloud Engineer</span>
+        <p class="summary">Results-driven Python Backend Developer and AWS Cloud Engineer with 4+ years of hands-on experience designing, deploying, and scaling web applications and cloud-native infrastructure. Strong expertise across Django, DRF, AWS services, Docker, CI/CD, and automation workflows.</p>
+
+        <div class="contact-links">
+          <a href="mailto:souravjoyti@gmail.com">📧 souravjoyti@gmail.com</a>
+          <a href="tel:+919851350560">📞 +91-9851350560</a>
+          <a href="tel:+917001159812">📱 +91-7001159812</a>
+          <a href="https://linkedin.com/in/souravjyoti-naskar" target="_blank" rel="noopener">🔗 LinkedIn Profile</a>
+          <a href="https://github.com/SouravJyoti2412" target="_blank" rel="noopener">💻 GitHub Profile</a>
+          <a href="#projects">🚀 Project Showcase</a>
         </div>
-        <div class="chips">
-          <span class="chip">Kolkata, West Bengal, India</span>
-          <span class="chip">LinkedIn: linkedin.com/in/souravjyoti-naskar</span>
-          <span class="chip">GitHub: github.com/SouravJyoti2412</span>
+
+        <div class="meta">
+          <span class="tag">Kolkata, West Bengal, India</span>
+          <span class="tag">Django / DRF Specialist</span>
+          <span class="tag">AWS Infrastructure Engineer</span>
+          <span class="tag">Linux & Automation</span>
         </div>
       </article>
 
-      <aside class="glass contact-card">
-        <h2>Core Focus Areas</h2>
-        <ul>
-          <li>Backend architecture with Django / DRF and RESTful APIs</li>
-          <li>AWS cloud operations: EC2, S3, RDS, Lambda, VPC, Route 53, IAM, CloudWatch, SSM</li>
-          <li>Docker, CI/CD pipelines, Linux server optimisation and reliability engineering</li>
-          <li>Automation workflows: scraping, scheduled jobs, data sync and reporting</li>
-        </ul>
-      </aside>
+      <article class="glass hero-photo">
+        <img src="images/IMG_3366.webp" alt="Sourav Jyoti Naskar profile photo" />
+      </article>
     </section>
 
     <section>
-      <h2>Technical Skills</h2>
-      <div class="grid two-col">
-        <article class="glass card"><h3>Languages</h3><p class="muted">Python, JavaScript, SQL, HTML5, CSS3</p></article>
-        <article class="glass card"><h3>Backend</h3><p class="muted">Django, DRF, Celery, Redis, API Design, BeautifulSoup, Scrapy</p></article>
-        <article class="glass card"><h3>Frontend</h3><p class="muted">React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p></article>
-        <article class="glass card"><h3>DevOps / Cloud</h3><p class="muted">Docker, Git, GitHub, AWS CLI, CI/CD, EC2 snapshots, backup & disaster recovery</p></article>
-        <article class="glass card"><h3>Databases</h3><p class="muted">MySQL, PostgreSQL, DynamoDB, Redis</p></article>
-        <article class="glass card"><h3>OS / Environments</h3><p class="muted">Linux, Unix, Ubuntu, Windows</p></article>
+      <h2 class="section-title">Core Technical Skills</h2>
+      <div class="grid three-col">
+        <article class="glass card"><h3>Languages</h3><p>Python, JavaScript, SQL, HTML5, CSS3</p></article>
+        <article class="glass card"><h3>Backend</h3><p>Django, DRF, Celery, Redis, REST API Design, BeautifulSoup, Scrapy</p></article>
+        <article class="glass card"><h3>Frontend</h3><p>React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p></article>
+        <article class="glass card"><h3>AWS Services</h3><p>EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, Route 53, CloudWatch, SSM</p></article>
+        <article class="glass card"><h3>DevOps</h3><p>Docker, CI/CD, Git, GitHub, AWS CLI, Snapshots, AMI, backup recovery</p></article>
+        <article class="glass card"><h3>Databases & OS</h3><p>MySQL, PostgreSQL, Redis, DynamoDB, Linux, Unix, Ubuntu, Windows</p></article>
       </div>
     </section>
 
     <section>
-      <h2>Professional Experience</h2>
-      <article class="glass card timeline-item">
-        <h3>Full Stack Web Developer & AWS Cloud Engineer | MSU</h3>
-        <p class="muted">Kolkata, India | June 2024 – Present</p>
-        <ul>
-          <li>Managed and improved 13 production websites with new features and performance upgrades.</li>
-          <li>Built a custom blog CMS with Django + Next.js to speed up publishing operations.</li>
-          <li>Optimised EC2 infrastructure and increased traffic handling capacity by ~20%.</li>
-          <li>Configured and secured S3 with IAM policy controls, lifecycle logic, and CLI workflows.</li>
-          <li>Implemented AMI and snapshot backup strategy for recovery and rapid provisioning.</li>
-        </ul>
-      </article>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="glass card">
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer & AWS Cloud Engineer — MSU</h3>
+          <p>June 2024 – Present, Kolkata, India</p>
+          <ul>
+            <li>Maintaining 13 production websites with feature and performance improvements.</li>
+            <li>Built a custom CMS with Django + Next.js to accelerate content publishing.</li>
+            <li>Optimised EC2 instances, boosting traffic handling by 20%.</li>
+            <li>Configured S3 policies, IAM roles, Route 53 DNS, security groups, and backups.</li>
+          </ul>
+        </div>
 
-      <article class="glass card timeline-item">
-        <h3>Full Stack Web Developer | Heliware</h3>
-        <p class="muted">Kolkata, India | May 2023 – May 2024</p>
-        <ul>
-          <li>Employee of the Month (October 2023) for high-impact product contributions.</li>
-          <li>Improved server response times by 10% using Redis caching for email workflows.</li>
-          <li>Led development of Helibucket cloud object storage platform end-to-end.</li>
-          <li>Shipped secure document sharing with auto-passwording and Celery email automation.</li>
-        </ul>
-      </article>
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer — Heliware</h3>
+          <p>May 2023 – May 2024, Kolkata, India</p>
+          <ul>
+            <li>Built Helibucket cloud storage platform as lead developer.</li>
+            <li>Reduced response time by 10% with Redis-based optimization.</li>
+            <li>Won Employee of the Month (October 2023).</li>
+          </ul>
+        </div>
 
-      <article class="glass card timeline-item">
-        <h3>Full Stack Developer | Azmuth Technologies</h3>
-        <p class="muted">Kolkata, India | Feb 2022 – May 2023</p>
-        <ul>
-          <li>Built 3-4 dynamic websites including E-Ration and Ankoraa ecommerce platform.</li>
-          <li>Developed DRF APIs and responsive front-end pages using modern web stack.</li>
-          <li>Handled deployment lifecycle, server maintenance, and Git-based release control.</li>
-        </ul>
-      </article>
+        <div class="timeline-item">
+          <h3>Full Stack Developer — Azmuth Technologies</h3>
+          <p>Feb 2022 – May 2023, Kolkata, India</p>
+          <ul>
+            <li>Delivered dynamic websites and DRF APIs including E-Ration and Ankoraa.</li>
+            <li>Integrated payment gateway and cut paperwork by 75% in E-Ration flow.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Key Projects</h2>
-      <div class="grid two-col">
-        <article class="glass card">
-          <h3>Helibucket — Cloud Object Storage Platform</h3>
-          <p class="muted">Django, DRF, Python, Celery, ReactJS, Bootstrap | helibucket.co.in</p>
-        </article>
-        <article class="glass card">
-          <h3>Medhavi Repository — Internal Backup Object Storage</h3>
-          <p class="muted">Django, DRF, Next.js, AWS S3, Lambda | repository.msu.edu.in</p>
-        </article>
-        <article class="glass card">
-          <h3>MSU Student Assignment System — Online Mock Test Platform</h3>
-          <p class="muted">Django, DRF, Python, JavaScript, MySQL with OTP login, timed exams, and reporting</p>
-        </article>
-        <article class="glass card">
-          <h3>E-Ration & Ankoraa Platforms</h3>
-          <p class="muted">Digital order + payment workflow and full ecommerce journey with secure checkout</p>
-        </article>
+    <section id="projects">
+      <h2 class="section-title">Project Highlights</h2>
+      <div class="grid three-col">
+        <article class="project-card"><img src="images/ankoraa.webp" alt="Ankoraa project preview" /><div class="project-body"><h3>Ankoraa</h3><span class="pill">Private</span><span class="pill">HTML/Django</span><p>Single-vendor ecommerce platform with browsing, cart flow, and checkout experience.</p></div></article>
+        <article class="project-card"><img src="images/erationcard.webp" alt="E-Ration project preview" /><div class="project-body"><h3>E-Ration</h3><span class="pill">Private</span><span class="pill">Django/DRF</span><p>Digital ration-card ordering with payment integration and major paperwork reduction.</p></div></article>
+        <article class="project-card"><img src="images/swwcnpsngo.webp" alt="MSU and cloud projects preview" /><div class="project-body"><h3>MSU / Cloud Work</h3><span class="pill">Production</span><span class="pill">AWS</span><p>Multi-site production stack, cloud storage logic, and infrastructure reliability work.</p></div></article>
+        <article class="project-card"><img src="images/taniya-ambulance.webp" alt="Service portal project preview" /><div class="project-body"><h3>nodewave-revamp</h3><span class="pill">Public</span><span class="pill">HTML</span><p>Modernized UI/UX revamp effort focused on cleaner structure and better responsiveness.</p></div></article>
+        <article class="project-card"><img src="images/canningpilesclinic.webp" alt="Healthcare website preview" /><div class="project-body"><h3>hrms_website / cmd-our-team-page</h3><span class="pill">Mixed</span><span class="pill">HTML/CSS</span><p>Corporate and team presentation pages with practical responsive layout implementation.</p></div></article>
+        <article class="project-card"><img src="images/bdcash7.webp" alt="Game and utility projects preview" /><div class="project-body"><h3>bdcash7 + utilities</h3><span class="pill">Public</span><span class="pill">Django/Game</span><p>Interactive gaming and utility-style builds including calculators, task tools, and APIs.</p></div></article>
+      </div>
+
+      <div class="glass card" style="margin-top:16px;">
+        <h3 style="margin-top:0;">Additional Repository Glimpses</h3>
+        <p style="color:var(--muted); margin-bottom:8px;">nodebase-telegram-mini-app, dhpe-erp-backend, dhpe-erp-frontend, stenosol, nodewave-game, nodewave-cloud, employee-monitoring, ibdaad-it, intelactiv, jwellery-pos, india-mart-data-scrapper-extension, emplyee-task-assign-real-time-notification, indian-chiken-express, amuzeum-lab, user-organasation-tree, emi-calculator, product-catelog-curd, Ufx_studio, mobile_cover_website, luduchash7, ancifab, and portfolio.</p>
       </div>
     </section>
 
     <section>
-      <h2>Education & Certifications</h2>
+      <h2 class="section-title">Education & Achievements</h2>
       <div class="grid two-col">
         <article class="glass card">
           <h3>GNIIT Diploma — Full Stack Development</h3>
-          <p class="muted">NIIT, Garia, Kolkata | Oct 2017 – May 2021</p>
+          <p>NIIT, Garia, Kolkata | Oct 2017 – May 2021</p>
         </article>
         <article class="glass card">
           <h3>Bachelor's Degree</h3>
-          <p class="muted">Calcutta University, Kolkata | June 2013 – June 2017</p>
+          <p>Calcutta University, Kolkata | June 2013 – June 2017</p>
+        </article>
+        <article class="glass card">
+          <h3>Award</h3>
+          <p>Employee of the Month — Heliware (October 2023)</p>
+        </article>
+        <article class="glass card">
+          <h3>Languages</h3>
+          <p>English | Hindi | Bengali</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer>
-    Languages: English | Hindi | Bengali • Built with adaptive light/dark theme for modern browsers.
+    © 2026 Sourav Jyoti Naskar • Python Backend Developer • AWS Cloud Engineer
   </footer>
 
   <script>
     (() => {
       const key = "theme-preference";
+      const modes = ["auto", "dark", "light"];
       const button = document.getElementById("themeToggle");
       const root = document.documentElement;
-      const modes = ["auto", "dark", "light"];
 
       const saved = localStorage.getItem(key);
-      const initialMode = modes.includes(saved) ? saved : "auto";
-      root.setAttribute("data-theme", initialMode);
-      button.textContent = `Theme: ${initialMode[0].toUpperCase() + initialMode.slice(1)}`;
+      const initial = modes.includes(saved) ? saved : "auto";
+      root.setAttribute("data-theme", initial);
+      button.textContent = `Theme: ${initial[0].toUpperCase() + initial.slice(1)}`;
 
       button.addEventListener("click", () => {
         const current = root.getAttribute("data-theme") || "auto";
