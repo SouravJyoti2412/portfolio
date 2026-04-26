@@ -1,467 +1,326 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title id="titel">portfolio | Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.0/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-        
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourav Jyoti Naskar | Portfolio 2026</title>
+  <meta name="description" content="Python Backend Developer & AWS Cloud Engineer portfolio of Sourav Jyoti Naskar." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #101935;
+      --surface: rgba(18, 29, 58, 0.75);
+      --surface-2: rgba(28, 42, 79, 0.75);
+      --text: #eaf1ff;
+      --muted: #a9b7d9;
+      --brand: #6ea8ff;
+      --brand-2: #6dffe3;
+      --border: rgba(140, 166, 222, 0.28);
+      --shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+    }
 
-    </head>
-    <body>
-          <header>
-            <nav class="shadow-md 
-            fixed  z-10">
-                <label><img src="images/hamberger.webp" id="hamberger" class="hamberger"></label>
-                <label class="logo"><a href =  "#">Portfolio<span class="text-blue-500 text-5xl">.</span></a></label>
-                <ul id="navigation">
-                    <li><a href="#hero" id="home_btn">home</a></li>
-                    <li><a href="#projects" id="project_btn">projects</a></li>
-                    <li><a href="#education" id="eduaction_btn">education</a></li>
-                    <li><a href="#about" id ="about_btn">about</a></li>
-                    <li><a href="#contact" id="contact_btn">contact</a></li>
-                </ul>
-               
-            </nav>
-          </header>  
-    <div class="child" style="display:none;">
-        <div class="close-bottom"><img src="images/cross.webp" id="cross" class="cross"></div>
-        <div class="mobile-menu">
-            <ul class="navigation">
-                <li><a href="#hero" id="home_btn1">home</a></li>
-                <li><a href="#projects" id="project_btn1">projects</a></li>
-                <li><a href="#education" id="eduaction_btn1">edcation</a></li>
-                <li><a href="#about" id ="about_btn1">about</a></li>
-                <li><a href="#contact" id="contact_btn1">contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero" id="hero" data-aos="fade-up">
-        <div class="container mx-auto px-4 py-56 animate__animated animate__fadeIn hero-text">
-            <h1 class="text-4xl text-white font-bold mb-2">Sourav Jyoti Naskar</h1>
-            <h2 class=" text-3xl text-gray-300 font-bold mb-2">I am <span class="typed-text-output "></span></h2>
-            <div class="typed-text hidden">Web Designer, Web Developer, Front-End Dev, Full-Stack Dev</div>
-            <button onclick="window.location.href='images/SouravJyotiNaskarCv.pdf';"   class="bg-color  mb-5 pr-50 hover:bg-blue-500 rounded text-white font-bold p-4 rounded">
-                View CV
-            </button>
-            <button onclick="window.location.href='tel:+917001159812';" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white p-4 border border-white hover:border-transparent rounded">
-                Contact me for Your project
-            </button>
-        </div>
-    </div>
-    <div class="container mx-auto my-8 pl-2 pr-2" data-aos="fade-right">
-            <!-- <div class="flex justify-between mb-8">
-                <h1 class="text-3xl font-bold">My Skills and Experience</h1>
-                <a href="#"id="link" class="bg-color hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Download CV</a>
-            </div> -->
-    
-            <!-- Skill Section -->
-            <div class="mb-8">
-                
-                <div class="flex flex-wrap justify-between">
-                    
-                    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 mb-4">
-                        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Python</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-red-500 absolute" style="width: 75%;"></div>
-                            </div>
-                            <div class="text-right mt-1">75%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Django</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-color absolute" style="width: 90%;"></div>
-                            </div>
-                            <div class="text-right mt-1">90%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Html</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-color absolute" style="width: 95%;"></div>
-                            </div>
-                            <div class="text-right mt-1">95%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2 mb-2">
-                            <h3 class="text-xl font-bold mb-2">Css</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-gray-500 absolute" style="width: 85%;"></div>
-                            </div>
-                            <div class="text-right mt-1">85%</div>
-                        </div>
-                        <div class="bg-gray-200 rounded-lg p-2">
-                            <h3 class="text-xl font-bold mb-2">Jquery</h3>
-                            <div class="h-2 relative max-w-xl rounded-full overflow-hidden">
-                                <div class="w-full h-full bg-gray-300 absolute"></div>
-                                <div class="h-full bg-pink-500 absolute" style="width: 75%;"></div>
-                            </div>
-                            <div class="text-right mt-1">75%</div>
-                        </div>
-                    </div>
-                    <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 mb-4 pl-2 pr-2">
-                      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-                        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Experience</h1>
-                      </div>
-			   <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Heliware- May 2023 to Present</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS, and JavaScript Created REST APIs for efficient communication between applications</li>
-                              <li>Created REST APIs for efficient communication between applications</li>
-			       <li>create react app and use mongo db for queries</li>
-                          </ul>
-			   </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Azmuth Technologies Pvt Ltd - October 2022 to may 2023</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS, and JavaScript Created REST APIs for efficient communication between applications</li>
-                              <li>Created REST APIs for efficient communication between applications</li>
-                          </ul>
-                        </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Full-stack Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Ufx Studio - june 2022 to August 2022</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using Python, Django, HTML, CSS,booststarp and JavaScript</li>
-                             
-                          </ul>
-                        </div>
-                        <div class="bg-gray-200 p-6 rounded-lg mb-4">
-                          <h3 class="text-xl font-bold mb-2">Front end Web Developer</h3>
-                          <div class="text-gray-600 text-sm mb-4 ml-8">Kamprik Software Development Pvt Ltd  - December 2021 to january 2022</div>
-                          <ul class="list-disc ml-8">
-                              <li>Developed web applications using HTML, CSS,Bootstrap and JavaScript </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="bg-gray-100 py-8" id ="education">
-          <div class="container mx-auto px-2">
-            <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-              <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Education</h1>
-            </div>
-        
-            <div class="mb-4">
-              <h3 class="text-xl font-bold">Graduated in Science</h3>
-              <h4 class="text-gray-700">Bankim Sardar College</h4>
-              <p class="text-gray-700">Pure Science</p>
-              <p class="text-gray-700">Completed in 01/05/2017</p>
-            </div>
-        
-            <div class="mb-4">
-              <h3 class="text-xl font-bold">GNIIT</h3>
-              <p class="text-gray-700">Java, HTML, SQL, jQuery, Data Structure, Algorithm, etc.</p>
-              <p class="text-gray-700">Completed in 01/05/2021</p>
-            </div>
-        
-          </div>
-        </section>        
-        <section class="body-font "data-aos="slide-up">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-                <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">My Services</h1>
-              </div>
-              <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/2 md:w-1/2 sm:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4"> 
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g >
-                        <path fill="#444444" d="M45,46H3c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h42c1.105,0,2,0.895,2,2v36C47,45.105,46.105,46,45,46z&#10;&#9;"/>
-                        <rect x="3" y="13" fill="#FFFFFF" width="42" height="31"/>
-                        <circle fill="#E86C60" cx="4.5" cy="9.5" r="1.5"/>
-                        <circle fill="#EFD358" cx="9.5" cy="9.5" r="1.5"/>
-                        <circle fill="#72C472" cx="14.5" cy="9.5" r="1.5"/>
-                        <path fill="#A67C52" d="M38.172,2.828c-1.105-1.105-2.895-1.105-4,0L21.536,15.464c0.988,0.181,1.899,0.65,2.625,1.376&#10;&#9;c0.726,0.726,1.194,1.636,1.375,2.624L38.172,6.828C39.276,5.724,39.276,3.933,38.172,2.828z"/>
-                        <path fill="#E6E6E6" d="M21.536,15.464L16,21l4,4l5.536-5.536c-0.181-0.988-0.65-1.899-1.375-2.624&#10;&#9;C23.435,16.115,22.524,15.646,21.536,15.464z"/>
-                        <path fill="#E86C60" d="M41,41H7c-0.552,0-1-0.448-1-1v-7c0-0.552,0.448-1,1-1h34c0.552,0,1,0.448,1,1v7C42,40.552,41.552,41,41,41z&#10;&#9;"/>
-                        <path fill="#444444" d="M20.863,27.192c0.89-0.934,1.387-2.146,1.387-3.441c0-1.336-0.52-2.591-1.464-3.535s-2.2-1.465-3.536-1.465&#10;&#9;c-1.336,0-2.591,0.521-3.536,1.465c-1.056,1.056-1.467,3.263-1.623,5.089c1.596,0.415,2.689,0.727,3.846,1.04&#10;&#9;C17.368,26.73,18.844,27.132,20.863,27.192z"/>
-                        <path fill="#E86C60" d="M12.008,28.02l0.025,0.948l0.947,0.025C13.109,28.996,13.304,29,13.552,29c1.667,0,5.687-0.168,7.233-1.715&#10;&#9;c0.029-0.029,0.049-0.064,0.077-0.094c-3.56-0.974-5.061-2.161-8.771-1.888C11.985,26.549,11.997,27.618,12.008,28.02z"/>
-                        </g></svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2 font-bold">Website Design</h2>
-                    <ul class="grid grid-cols-1 md:grid-cols-2">
-                      <li class="bg-white ">
-                          <ul class="list-disc">
-                              <li>Custom website design with color matching</li>
-                              <li>Responsive design for all devices</li>
-                              <li>Search engine optimization</li>
-                              <li>User-friendly interface design</li>
-                          </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="xl:w-1/2 sm:w-1/2 md:w-1/2 p-4 ">
-                  <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 79 79" style="enable-background:new 0 0 79 79;" xml:space="preserve">
-                   <style type="text/css">
-                     .st0{display:none;}
-                     .st1{display:inline;}
-                     .st2{fill:none;}
-                     .st3{fill:#EFD620;}
-                   </style>
-                   <g id="Layer_1" class="st0">
-                     <g id="Layer_3" class="st1">
-                       <rect class="st2" width="79" height="79"/>
-                     </g>
-                     <g id="Layer_1_1_" class="st1">
-                       <g>
-                         <path class="st3" d="M75,4v71H4V4H75 M79,0H0v79h79V0L79,0z"/>
-                       </g>
-                     </g>
-                     <g id="Layer_2_1_" class="st1">
-                       <g>
-                         <path class="st3" d="M28.3,51.7L5.8,41.2v-2.4l22.5-12v3.7L10,39.7l18.3,8.2V51.7z"/>
-                         <path class="st3" d="M47.8,21.2L35.1,57.8h-3.9l12.7-36.5L47.8,21.2L47.8,21.2z"/>
-                         <path class="st3" d="M50.7,47.9L69,39.8l-18.3-9.3v-3.7l22.5,12v2.4L50.7,51.7V47.9z"/>
-                       </g>
-                     </g>
-                   </g>
-                   <g id="Layer_2">
-                     <g>
-                       <path d="M5.9,39.5l19.9,8.2L24.3,52L0.1,41.7v-4.5L24.3,27l1.5,4.3L5.9,39.5z"/>
-                       <path d="M32.7,66.6h-5.3l19-54.2h5.2L32.7,66.6z"/>
-                       <path d="M53.2,31.3l1.5-4.3l24.2,10.2v4.5L54.7,52l-1.5-4.3l19.9-8.2L53.2,31.3z"/>
-                     </g>
-                   </g>
-                     </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Web Development</h2>
-                <ul class="grid grid-cols-1 md:grid-cols-2">  
-                  <li class="bg-white">
-                      <ul class="list-disc ">
-                          <li>Custom web application development</li>
-                          <li>Front-end development using modern frameworks</li>
-                          <li>Back-end development with APIs</li>
-                          <li>E-commerce solutions</li>
-                      </ul>
-                  </li>
-                </ul>
-                  </div>
-                </div>
-                <!-- <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                      </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-                  </div>
-                </div>
-                <div class="xl:w-1/2 md:w-1/2 p-4">
-                  <div class="border border-gray-200 p-6 rounded-lg">
-                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                      </svg>
-                    </div>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
-                  </div>
-                </div> -->
-              
-                
-              </div>
-              <!-- <button class="flex mx-auto mt-16 text-white bg-color border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
-            </div>
-          </section>
-    <section data-aos="slide-right" >
-      <section class="container mx-auto my-8 p-4" id ="projects">
-        <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-          <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Working On Projects which are Live</h1>
-		    </div>
+    html[data-theme="light"] {
+      --bg: #f4f7ff;
+      --bg-soft: #e9efff;
+      --surface: rgba(255, 255, 255, 0.8);
+      --surface-2: rgba(244, 249, 255, 0.9);
+      --text: #0b1a39;
+      --muted: #4d5f87;
+      --brand: #225ce6;
+      --brand-2: #0496a8;
+      --border: rgba(37, 83, 182, 0.2);
+      --shadow: 0 12px 30px rgba(39, 61, 110, 0.12);
+    }
 
-		<!-- Project Showcase -->
-		<div class="flex flex-wrap justify-between "  >
-			<div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white hover:bg-gray-200 rounded-lg shadow-xl shadow-[#50d71e] overflow-hidden">
-					<a href="https://erationcard.in/"><img src="images/erationcard.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">e-Ration card</h3>
-						<div class="text-gray-600 text-sm mb-4">this website will give you an online digital e-ration card
-              order website, it has 2 dashboards, one is for the
-              admin, and one for the manager.
-              </div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://erationcard.in/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://taniya-ambulance.com"><img src="images/taniya-ambulance.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Taniya Ambulance Service</h3>
-						<div class="text-gray-600 text-sm mb-4">This is a website , which have dynamic content , this
-              is a portfolio page of ambulance and anybody can
-              book ambulance from site , by book appoinment.</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://taniya-ambulance.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://swwcnpsngo.com/"><img src="images/swwcnpsngo.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Swwcnps Ngo</h3>
-						<div class="text-gray-600 text-sm mb-4">this is a simple ngo website, any body can donate money for women and children,
-              and have some blogs. and full of dayanamic
-              website</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
-						</div>
-						<a href="https://swwcnpsngo.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://canningpilesclinic.com/"><img src="images/canningpilesclinic.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Canning piles clinic</h3>
-						<div class="text-gray-600 text-sm mb-4">a website of portfolio site of a doctor, who have own special chember</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://canningpilesclinic.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https://bdcash7.com/"><img src="images/bdcash7.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Bdcash7</h3>
-						<div class="text-gray-600 text-sm mb-4">These sites all are gaming gambling site
-              which have 6 different type game.
-              website</div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed</div>
-						</div>
-						<a href="https://bdcash7.com/" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-      <div class="w-full md:w-1/2 lg:w-1/3 mb-4 p-4">
-				<div class="bg-white rounded-lg shadow-md overflow-hidden">
-					<a href="https:ankoraa.com"><img src="images/ankoraa.webp" alt="Project Image" class="w-full"></a>
-					<div class="p-6">
-						<h3 class="text-xl font-bold mb-2">Ankoraa</h3>
-						<div class="text-gray-600 text-sm mb-4">this website is under testing, this website has
-              purpose a customized gift website which has e-commerce system, this is a single vendor e-commerce website, which have 2 image editor.
-              </div>
-						<div class="flex items-center mb-4">
-							<div class="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
-							<div class="text-gray-600 text-sm">Status: Completed(updating)</div>
-						</div>
-						<a href="https:ankoraa.com" class="bg-color hover:bg-blue-500 text-white hover:text-white font-bold py-2 px-4 rounded">View Project</a>
-					</div>
-				</div>
-			</div>
-		</div>
-  </section>
-  </div>
-  <section id="about">
-    <div class="container mx-auto px-4 py-8" data-aos="fade-up"  >
-      <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 " >About Me</h1>
-      </div>
-      <div class="flex flex-wrap -m-4">
-      <div class="w-full md:w-full lg:w-full px-4">
-        <p>Hi, I'm Sourav Jyoti Naskar, a full-stack web developer with expertise in Python, Django, HTML, CSS, and JQuery. I have 2+ years of experience working with Django and have also worked on PHP projects in the past. I have a strong foundation in Java and enjoy working with Python due to its simplicity and flexibility. I specialize in creating responsive, dynamic, and interactive user interfaces using HTML, CSS, and JQuery. I also have experience in creating REST APIs and hosting websites on VPS and Cloud platforms. I am a creative problem solver with a keen eye for detail and am passionate about creating innovative and functional web applications. Currently, I am learning React to enhance my front-end development skills. I would love to contribute my skills and experience to your team's success. Thank you for considering my application.
-        </p>
-      </div>
-      </div>
-    </div>
-  </section>
-    
-    <section class="container mx-auto px-4 py-8" data-aos="fade-in" id="contact">
-      <div class="flex flex-wrap w-full flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-4xl font-bold title-font mb-2 ">Contact me</h1>
-      </div>
-      <div class="mb-8  justify-center sm:py-12">
-        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-          <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-          <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-            <div class="">
-              <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
-              <div class="flex items-center space-x-4 mb-4">
-                <i class="fas fa-phone-alt text-gray-400"></i>
-                <a href="tel:+917001159812"><span class="text-gray-600 font-semibold">+91 700-115-9812</span></a>
-              </div>
-              <div class="flex items-center space-x-4 mb-4">
-                <i class="fas fa-envelope text-gray-400"></i>
-                <a href="mailto:souravjoyti@gmail.com" class="text-gray-600 font-semibold hover:underline">souravjoyti@gmail.com</a>
-              </div>
-              <div class="flex items-center space-x-4">
-                <i class="fas fa-map-marker-alt text-gray-400"></i>
-                <span class="text-gray-600 font-semibold">No 1 Dighirpar , Canning, West Bengal , India</span>
-              </div>
-            </div>
-            <!-- <h1 class="text-3xl font-bold mb-6 pt-2">Get in Touch</h1>
-            <form method = "post" >
-              <div class="mb-6">
-                <label for="name" class="block mb-2 font-semibold text-gray-600">Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-              </div>
-              <div class="mb-6">
-                <label for="email" class="block mb-2 font-semibold text-gray-600">Email</label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-              </div>
-              <div class="mb-6">
-                <label for="message" class="block mb-2 font-semibold text-gray-600">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
-              </div>
-              <div class="flex justify-end">
-                <button type="submit" class="px-4 py-2 text-white bg-color hover:bg-blue-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Send</button>
-              </div>
-            </form> -->
-          </div>
-        </div>
-      </div>
+    @media (prefers-color-scheme: light) {
+      html[data-theme="auto"] {
+        --bg: #f4f7ff;
+        --bg-soft: #e9efff;
+        --surface: rgba(255, 255, 255, 0.8);
+        --surface-2: rgba(244, 249, 255, 0.9);
+        --text: #0b1a39;
+        --muted: #4d5f87;
+        --brand: #225ce6;
+        --brand-2: #0496a8;
+        --border: rgba(37, 83, 182, 0.2);
+        --shadow: 0 12px 30px rgba(39, 61, 110, 0.12);
+      }
+    }
 
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 5% -10%, rgba(110,168,255,0.23), transparent 70%),
+        radial-gradient(1000px 600px at 95% 0%, rgba(109,255,227,0.2), transparent 70%),
+        var(--bg);
+      color: var(--text);
+      transition: background 0.45s ease, color 0.45s ease;
+      line-height: 1.6;
+    }
+
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+
+    .glass {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      transition: background 0.35s ease, border-color 0.35s ease;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: color-mix(in srgb, var(--bg) 70%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 10px;
+    }
+
+    .brand { font-size: 1.1rem; font-weight: 700; letter-spacing: .3px; }
+    .brand span { color: var(--brand-2); }
+
+    .theme-btn {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font: inherit;
+      color: var(--text);
+      background: var(--surface-2);
+      cursor: pointer;
+      transition: transform .2s ease, background .35s ease;
+    }
+    .theme-btn:hover { transform: translateY(-1px); }
+
+    section { padding: 58px 0; }
+
+    .hero {
+      padding-top: 36px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-card, .contact-card { padding: 28px; }
+
+    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.2; margin: 0; }
+    h2 { font-size: clamp(1.3rem, 3.4vw, 2rem); margin: 0 0 12px; }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; }
+
+    .lead { color: var(--muted); margin: 16px 0 22px; }
+    .role { color: var(--brand); font-weight: 600; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .chip {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--muted);
+      font-size: .9rem;
+      background: var(--surface-2);
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 14px;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .grid { display: grid; gap: 18px; }
+    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card { padding: 20px; }
+
+    .muted { color: var(--muted); }
+
+    .timeline-item {
+      border-left: 2px solid var(--border);
+      padding-left: 16px;
+      margin-left: 6px;
+      margin-bottom: 20px;
+    }
+
+    ul { margin: 8px 0 0; padding-left: 18px; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 26px 0 40px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 920px) {
+      .hero, .two-col { grid-template-columns: 1fr; }
+      section { padding: 44px 0; }
+      .hero-card, .contact-card { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Sourav<span>_2026</span></div>
+        <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme mode">Theme: Auto</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <article class="glass hero-card">
+        <h1>SOURAV JYOTI NASKAR</h1>
+        <p class="role">Python Backend Developer | AWS Cloud Engineer</p>
+        <p class="lead">Results-driven engineer with 4+ years of experience building scalable web systems and cloud infrastructure using Django, DRF, and AWS services. Focused on performance, reliability, and automation-first delivery.</p>
+        <div class="links">
+          <a href="mailto:souravjoyti@gmail.com">souravjoyti@gmail.com</a>
+          <a href="tel:+919851350560">+91-9851350560</a>
+          <a href="tel:+917001159812">+91-7001159812</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Kolkata, West Bengal, India</span>
+          <span class="chip">LinkedIn: linkedin.com/in/souravjyoti-naskar</span>
+          <span class="chip">GitHub: github.com/SouravJyoti2412</span>
+        </div>
+      </article>
+
+      <aside class="glass contact-card">
+        <h2>Core Focus Areas</h2>
+        <ul>
+          <li>Backend architecture with Django / DRF and RESTful APIs</li>
+          <li>AWS cloud operations: EC2, S3, RDS, Lambda, VPC, Route 53, IAM, CloudWatch, SSM</li>
+          <li>Docker, CI/CD pipelines, Linux server optimisation and reliability engineering</li>
+          <li>Automation workflows: scraping, scheduled jobs, data sync and reporting</li>
+        </ul>
+      </aside>
     </section>
 
-
-    <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-4">
-        <p class="text-center">&copy; 2023 Sourav Jyoti Naskar. All rights reserved.</p>
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="grid two-col">
+        <article class="glass card"><h3>Languages</h3><p class="muted">Python, JavaScript, SQL, HTML5, CSS3</p></article>
+        <article class="glass card"><h3>Backend</h3><p class="muted">Django, DRF, Celery, Redis, API Design, BeautifulSoup, Scrapy</p></article>
+        <article class="glass card"><h3>Frontend</h3><p class="muted">React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p></article>
+        <article class="glass card"><h3>DevOps / Cloud</h3><p class="muted">Docker, Git, GitHub, AWS CLI, CI/CD, EC2 snapshots, backup & disaster recovery</p></article>
+        <article class="glass card"><h3>Databases</h3><p class="muted">MySQL, PostgreSQL, DynamoDB, Redis</p></article>
+        <article class="glass card"><h3>OS / Environments</h3><p class="muted">Linux, Unix, Ubuntu, Windows</p></article>
       </div>
-    </footer>          
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="style.js" async defer></script>
-    
-    
-    </body>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <article class="glass card timeline-item">
+        <h3>Full Stack Web Developer & AWS Cloud Engineer | MSU</h3>
+        <p class="muted">Kolkata, India | June 2024 – Present</p>
+        <ul>
+          <li>Managed and improved 13 production websites with new features and performance upgrades.</li>
+          <li>Built a custom blog CMS with Django + Next.js to speed up publishing operations.</li>
+          <li>Optimised EC2 infrastructure and increased traffic handling capacity by ~20%.</li>
+          <li>Configured and secured S3 with IAM policy controls, lifecycle logic, and CLI workflows.</li>
+          <li>Implemented AMI and snapshot backup strategy for recovery and rapid provisioning.</li>
+        </ul>
+      </article>
+
+      <article class="glass card timeline-item">
+        <h3>Full Stack Web Developer | Heliware</h3>
+        <p class="muted">Kolkata, India | May 2023 – May 2024</p>
+        <ul>
+          <li>Employee of the Month (October 2023) for high-impact product contributions.</li>
+          <li>Improved server response times by 10% using Redis caching for email workflows.</li>
+          <li>Led development of Helibucket cloud object storage platform end-to-end.</li>
+          <li>Shipped secure document sharing with auto-passwording and Celery email automation.</li>
+        </ul>
+      </article>
+
+      <article class="glass card timeline-item">
+        <h3>Full Stack Developer | Azmuth Technologies</h3>
+        <p class="muted">Kolkata, India | Feb 2022 – May 2023</p>
+        <ul>
+          <li>Built 3-4 dynamic websites including E-Ration and Ankoraa ecommerce platform.</li>
+          <li>Developed DRF APIs and responsive front-end pages using modern web stack.</li>
+          <li>Handled deployment lifecycle, server maintenance, and Git-based release control.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Key Projects</h2>
+      <div class="grid two-col">
+        <article class="glass card">
+          <h3>Helibucket — Cloud Object Storage Platform</h3>
+          <p class="muted">Django, DRF, Python, Celery, ReactJS, Bootstrap | helibucket.co.in</p>
+        </article>
+        <article class="glass card">
+          <h3>Medhavi Repository — Internal Backup Object Storage</h3>
+          <p class="muted">Django, DRF, Next.js, AWS S3, Lambda | repository.msu.edu.in</p>
+        </article>
+        <article class="glass card">
+          <h3>MSU Student Assignment System — Online Mock Test Platform</h3>
+          <p class="muted">Django, DRF, Python, JavaScript, MySQL with OTP login, timed exams, and reporting</p>
+        </article>
+        <article class="glass card">
+          <h3>E-Ration & Ankoraa Platforms</h3>
+          <p class="muted">Digital order + payment workflow and full ecommerce journey with secure checkout</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Certifications</h2>
+      <div class="grid two-col">
+        <article class="glass card">
+          <h3>GNIIT Diploma — Full Stack Development</h3>
+          <p class="muted">NIIT, Garia, Kolkata | Oct 2017 – May 2021</p>
+        </article>
+        <article class="glass card">
+          <h3>Bachelor's Degree</h3>
+          <p class="muted">Calcutta University, Kolkata | June 2013 – June 2017</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Languages: English | Hindi | Bengali • Built with adaptive light/dark theme for modern browsers.
+  </footer>
+
+  <script>
+    (() => {
+      const key = "theme-preference";
+      const button = document.getElementById("themeToggle");
+      const root = document.documentElement;
+      const modes = ["auto", "dark", "light"];
+
+      const saved = localStorage.getItem(key);
+      const initialMode = modes.includes(saved) ? saved : "auto";
+      root.setAttribute("data-theme", initialMode);
+      button.textContent = `Theme: ${initialMode[0].toUpperCase() + initialMode.slice(1)}`;
+
+      button.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") || "auto";
+        const next = modes[(modes.indexOf(current) + 1) % modes.length];
+        root.setAttribute("data-theme", next);
+        localStorage.setItem(key, next);
+        button.textContent = `Theme: ${next[0].toUpperCase() + next.slice(1)}`;
+      });
+    })();
+  </script>
+</body>
 </html>
