@@ -1,55 +1,343 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="auto">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sourav Jyoti Naskar | Portfolio CV</title>
-  <meta name="description" content="Portfolio and CV of Sourav Jyoti Naskar, Python Backend Developer and AWS Cloud Engineer." />
+  <title>Sourav Jyoti Naskar | Premium Portfolio</title>
+  <meta name="description"
+    content="Official portfolio of Sourav Jyoti Naskar, Python Backend Developer and AWS Cloud Engineer." />
   <style>
     :root {
-      --bg: #070b15; --surface: rgba(18, 28, 54, 0.72); --surface-solid: #141f3b;
-      --text: #edf4ff; --muted: #a7b8dd; --primary: #7ea8ff; --secondary: #64f0dd;
-      --border: rgba(128, 160, 230, 0.28); --shadow: 0 20px 50px rgba(0, 0, 0, 0.36);
+      --bg: #070b17;
+      --bg-soft: #0e1730;
+      --surface: rgba(15, 23, 45, 0.74);
+      --surface-2: rgba(21, 34, 64, 0.86);
+      --text: #edf3ff;
+      --muted: #a5b6dc;
+      --brand: #78a8ff;
+      --brand-2: #6ff2d3;
+      --border: rgba(125, 157, 225, 0.3);
+      --ring: rgba(122, 160, 255, 0.4);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
     }
+
     html[data-theme="light"] {
-      --bg: #f3f7ff; --surface: rgba(255,255,255,.9); --surface-solid: #fff;
-      --text: #0a1734; --muted: #4c5f8c; --primary: #2458de; --secondary: #0e9d95;
-      --border: rgba(42,84,176,.22); --shadow: 0 14px 35px rgba(24,48,98,.14);
+      --bg: #f3f7ff;
+      --bg-soft: #e7eeff;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-2: rgba(243, 247, 255, 0.92);
+      --text: #081531;
+      --muted: #475985;
+      --brand: #1f57df;
+      --brand-2: #0f9f95;
+      --border: rgba(40, 81, 175, 0.22);
+      --ring: rgba(56, 107, 226, 0.25);
+      --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
     }
-    @media (prefers-color-scheme: light) { html[data-theme="auto"] { --bg:#f3f7ff; --surface:rgba(255,255,255,.9); --surface-solid:#fff; --text:#0a1734; --muted:#4c5f8c; --primary:#2458de; --secondary:#0e9d95; --border:rgba(42,84,176,.22); --shadow:0 14px 35px rgba(24,48,98,.14);} }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1200px 700px at -10% -20%, rgba(126,168,255,.24), transparent 70%),radial-gradient(1200px 700px at 110% -30%, rgba(100,240,221,.2), transparent 70%),var(--bg);line-height:1.6}
-    .container{width:min(1200px,92%);margin:0 auto}
-    .glass{background:var(--surface);border:1px solid var(--border);border-radius:22px;backdrop-filter:blur(12px);box-shadow:var(--shadow)}
-    .header{position:sticky;top:0;z-index:99;border-bottom:1px solid var(--border);backdrop-filter:blur(10px);background:color-mix(in srgb,var(--bg) 72%,transparent)}
-    .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:8px;flex-wrap:wrap}
-    .brand{font-weight:800}.brand span{color:var(--secondary)}
-    .actions{display:flex;gap:8px;flex-wrap:wrap}
-    .btn{border:1px solid var(--border);border-radius:999px;background:var(--surface-solid);color:var(--text);padding:9px 14px;text-decoration:none;font-weight:600;cursor:pointer}
-    main{padding:28px 0 50px}
-    h1,h2,h3{margin:0 0 10px;line-height:1.2} h1{font-size:clamp(2rem,4.5vw,3rem)} h2{font-size:clamp(1.2rem,3vw,1.9rem)}
-    .hero{display:grid;grid-template-columns:1.06fr .94fr;gap:18px}
-    .panel{padding:24px}.role{color:var(--primary);font-weight:700}.muted{color:var(--muted)}
-    .photo{width:100%;height:100%;min-height:380px;object-fit:cover;border-radius:18px;border:1px solid var(--border)}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:.84rem;color:var(--muted)}
-    .grid{display:grid;gap:14px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .card{padding:16px}.timeline{border-left:2px solid var(--border);padding-left:14px;margin-left:6px} ul{margin:6px 0 0;padding-left:18px}
-    .project{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--surface)}
-    .project-cover{height:122px;border-bottom:1px solid var(--border);position:relative}
-    .project-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,255,255,.15),transparent 55%)}
-    .project-body{padding:12px}.badge{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:3px 8px;margin-right:5px;margin-bottom:7px;font-size:.72rem;color:var(--muted)}
-    footer{border-top:1px solid var(--border);margin-top:24px;padding:16px 0 28px;text-align:center;color:var(--muted)}
-    @media print {.header,.actions,#themeToggle{display:none!important} body{background:#fff;color:#111} .glass,.project{box-shadow:none;border:1px solid #ddd} }
-    @media (max-width:980px){.hero,.grid-3,.grid-2{grid-template-columns:1fr}.photo{min-height:280px}}
+
+    @media (prefers-color-scheme: light) {
+      html[data-theme="auto"] {
+        --bg: #f3f7ff;
+        --bg-soft: #e7eeff;
+        --surface: rgba(255, 255, 255, 0.86);
+        --surface-2: rgba(243, 247, 255, 0.92);
+        --text: #081531;
+        --muted: #475985;
+        --brand: #1f57df;
+        --brand-2: #0f9f95;
+        --border: rgba(40, 81, 175, 0.22);
+        --ring: rgba(56, 107, 226, 0.25);
+        --shadow: 0 16px 40px rgba(30, 58, 125, 0.16);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", "Poppins", Roboto, system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background:
+        radial-gradient(1300px 700px at 0% -8%, rgba(120, 168, 255, 0.24), transparent 70%),
+        radial-gradient(1000px 700px at 100% -12%, rgba(111, 242, 211, 0.2), transparent 70%),
+        var(--bg);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 58px 0;
+    }
+
+    .glass {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      transition: transform .25s ease, border-color .35s ease, background .35s ease;
+    }
+
+    .glass:hover {
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      margin: 0 0 16px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--bg) 72%, transparent);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .25px;
+    }
+
+    .brand span {
+      color: var(--brand-2);
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .2s ease, border-color .2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--brand);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .hero-info {
+      padding: 28px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 1.15;
+    }
+
+    .role {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    .summary {
+      color: var(--muted);
+      margin: 16px 0 20px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 14px 0 6px;
+    }
+
+    .tag {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: .9rem;
+      color: var(--muted);
+      background: var(--surface-2);
+    }
+
+    .hero-photo {
+      overflow: hidden;
+      position: relative;
+      min-height: 340px;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      display: block;
+      filter: saturate(1.05) contrast(1.02);
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      box-shadow: inset 0 -90px 120px rgba(0, 0, 0, .35);
+      pointer-events: none;
+    }
+
+    .contact-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .contact-links a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+      padding: 10px 12px;
+      font-size: .95rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .two-col {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .three-col {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      transition: transform .25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-body {
+      padding: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: .78rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 9px;
+      color: var(--muted);
+      margin-right: 6px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item {
+      border-left: 2px solid var(--ring);
+      margin-left: 6px;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 0 36px;
+    }
+
+    @media (max-width: 980px) {
+
+      .hero,
+      .three-col {
+        grid-template-columns: 1fr;
+      }
+
+      .two-col,
+      .contact-links {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <header class="header">
-    <div class="container nav">
-      <div class="brand">Sourav Jyoti Naskar <span>• Portfolio CV</span></div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">Sourav Jyoti Naskar<span> • Portfolio</span></div>
       <div class="actions">
-        <button class="btn" onclick="window.print()">Save as PDF</button>
-        <a class="btn" href="images/SouravJyotiNaskarCv.pdf" target="_blank" rel="noopener">Existing PDF CV</a>
+        <a class="btn" href="images/SouravJyotiNaskarCv.pdf" target="_blank" rel="noopener">View CV</a>
         <button id="themeToggle" class="btn" type="button">Theme: Auto</button>
       </div>
     </div>
@@ -57,148 +345,357 @@
 
   <main class="container">
     <section class="hero">
-      <article class="glass panel">
+      <article class="glass hero-info">
         <h1>SOURAV JYOTI NASKAR</h1>
-        <div class="role">Python Backend Developer | AWS Cloud Engineer</div>
-        <p class="muted">Kolkata, West Bengal, India • <a href="mailto:souravjoyti@gmail.com">souravjoyti@gmail.com</a> • <a href="tel:+919851350560">+91-9851350560</a> / <a href="tel:+917001159812">7001159812</a></p>
-        <p class="muted">LinkedIn: <a href="https://linkedin.com/in/souravjyoti-naskar" target="_blank" rel="noopener">linkedin.com/in/souravjyoti-naskar</a> • GitHub: <a href="https://github.com/SouravJyoti2412" target="_blank" rel="noopener">github.com/SouravJyoti2412</a></p>
-        <p class="muted"><strong>Professional Summary:</strong> Results-driven Python Backend Developer and AWS Cloud Engineer with 4+ years of experience in scalable web applications and cloud infrastructure. Strong expertise in Django, DRF, REST APIs, AWS services (EC2, S3, Lambda, RDS, VPC, Route 53, IAM, CloudWatch, SSM), Docker, CI/CD, and Linux optimization.</p>
-        <div class="chips"><span class="chip">Django & DRF</span><span class="chip">AWS Cloud</span><span class="chip">Docker + CI/CD</span><span class="chip">Linux / Unix</span><span class="chip">Automation</span></div>
+        <span class="role">Python Backend Developer | AWS Cloud Engineer</span>
+        <p class="summary">Results-driven Python Backend Developer and AWS Cloud Engineer with 4+ years of hands-on
+          experience designing, deploying, and scaling web applications and cloud-native infrastructure. Strong
+          expertise across Django, DRF, AWS services, Docker, CI/CD, and automation workflows.</p>
+
+        <div class="contact-links">
+          <a href="mailto:souravjoyti@gmail.com">📧 souravjoyti@gmail.com</a>
+          <a href="tel:+919851350560">📞 +91-9851350560</a>
+          <a href="tel:+917001159812">📱 +91-7001159812</a>
+          <a href="https://linkedin.com/in/souravjyoti-naskar" target="_blank" rel="noopener">🔗 LinkedIn Profile</a>
+          <a href="https://github.com/SouravJyoti2412" target="_blank" rel="noopener">💻 GitHub Profile</a>
+          <a href="#projects">🚀 Project Showcase</a>
+        </div>
+
+        <div class="meta">
+          <span class="tag">Kolkata, West Bengal, India</span>
+          <span class="tag">Django / DRF Specialist</span>
+          <span class="tag">AWS Infrastructure Engineer</span>
+          <span class="tag">Linux & Automation</span>
+        </div>
       </article>
-      <article class="glass panel">
-        <img class="photo" src="images/IMG_20260304_101631838.jpg" onerror="this.onerror=null;this.src='images/IMG_3366.webp';" alt="Sourav Jyoti Naskar profile picture" />
+
+      <article class="glass hero-photo">
+        <img src="images/IMG_3366.webp" alt="Sourav Jyoti Naskar profile photo" />
       </article>
     </section>
 
-    <section class="glass panel" style="margin-top:18px;">
-      <h2>Core Technical Skills</h2>
-      <div class="grid grid-3">
-        <div class="card"><h3>Languages</h3><p class="muted">Python, JavaScript, SQL, HTML5, CSS3</p></div>
-        <div class="card"><h3>Backend</h3><p class="muted">Django, Django REST Framework, Celery, Redis, RESTful API Design, BeautifulSoup, Scrapy</p></div>
-        <div class="card"><h3>Frontend</h3><p class="muted">React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p></div>
-        <div class="card"><h3>AWS Services</h3><p class="muted">EC2, S3, Lambda, RDS, DynamoDB, VPC, Load Balancer, Route 53, IAM, CloudWatch, SSM, Elastic IP, AMI, CLI</p></div>
-        <div class="card"><h3>DevOps / Cloud</h3><p class="muted">Docker, CI/CD, Git, GitHub, AWS CLI, EC2 Snapshots, Backup & Disaster Recovery</p></div>
-        <div class="card"><h3>Databases & OS</h3><p class="muted">MySQL, PostgreSQL, DynamoDB, Redis, Linux, Unix, Ubuntu, Windows</p></div>
+    <section>
+      <h2 class="section-title">Core Technical Skills</h2>
+      <div class="grid three-col">
+        <article class="glass card">
+          <h3>Languages</h3>
+          <p>Python, JavaScript, SQL, HTML5, CSS3</p>
+        </article>
+        <article class="glass card">
+          <h3>Backend</h3>
+          <p>Django, DRF, Celery, Redis, REST API Design, BeautifulSoup, Scrapy</p>
+        </article>
+        <article class="glass card">
+          <h3>Frontend</h3>
+          <p>React.js, Next.js, Bootstrap, Tailwind CSS, jQuery</p>
+        </article>
+        <article class="glass card">
+          <h3>AWS Services</h3>
+          <p>EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, Route 53, CloudWatch, SSM</p>
+        </article>
+        <article class="glass card">
+          <h3>DevOps</h3>
+          <p>Docker, CI/CD, Git, GitHub, AWS CLI, Snapshots, AMI, backup recovery</p>
+        </article>
+        <article class="glass card">
+          <h3>Databases & OS</h3>
+          <p>MySQL, PostgreSQL, Redis, DynamoDB, Linux, Unix, Ubuntu, Windows</p>
+        </article>
       </div>
     </section>
 
-    <section class="glass panel" style="margin-top:18px;">
-      <h2>Professional Experience</h2>
-      <div class="timeline">
-        <h3>Full Stack Web Developer & AWS Cloud Engineer | MSU | Kolkata (June 2024 – Present)</h3>
-        <ul><li>Managed 13 production websites with continuous feature and performance upgrades.</li><li>Built Django + Next.js custom CMS reducing content publishing time.</li><li>Optimized EC2 handling by 20%, managed S3/IAM/Route53/VPC, snapshots, AMI cloning.</li><li>Integrated CRM APIs, Google Sheets sync, and lead scraper automation.</li></ul>
-        <h3>Full Stack Web Developer | Heliware | Kolkata (May 2023 – May 2024)</h3>
-        <ul><li>Employee of the Month (Oct 2023).</li><li>Reduced response time by 10% using Redis workflow caching.</li><li>Led Helibucket cloud storage build, secure sharing, and Celery-based notifications.</li></ul>
-        <h3>Full Stack Developer | Azmuth Technologies | Kolkata (Feb 2022 – May 2023)</h3>
-        <ul><li>Developed E-Ration, Ankoraa and other dynamic websites end-to-end.</li><li>Built DRF APIs, responsive frontend, deployment and server lifecycle management.</li><li>Integrated payment gateway and reduced paperwork by 75% in E-Ration.</li></ul>
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="glass card">
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer & AWS Cloud Engineer — MSU</h3>
+          <p>June 2024 – Present, Kolkata, India</p>
+          <ul>
+            <li>Maintaining 13 production websites with feature and performance improvements.</li>
+            <li>Built a custom CMS with Django + Next.js to accelerate content publishing.</li>
+            <li>Optimised EC2 instances, boosting traffic handling by 20%.</li>
+            <li>Configured S3 policies, IAM roles, Route 53 DNS, security groups, and backups.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Full Stack Web Developer — Heliware</h3>
+          <p>May 2023 – May 2024, Kolkata, India</p>
+          <ul>
+            <li>Built Helibucket cloud storage platform as lead developer.</li>
+            <li>Reduced response time by 10% with Redis-based optimization.</li>
+            <li>Won Employee of the Month (October 2023).</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Full Stack Developer — Azmuth Technologies</h3>
+          <p>Feb 2022 – May 2023, Kolkata, India</p>
+          <ul>
+            <li>Delivered dynamic websites and DRF APIs including E-Ration and Ankoraa.</li>
+            <li>Integrated payment gateway and cut paperwork by 75% in E-Ration flow.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="glass panel" style="margin-top:18px;">
-      <h2>Project Highlights (All Provided Projects)</h2>
-      <div id="projectsGrid" class="grid grid-3"></div>
+    <section id="projects">
+      <h2 class="section-title">Project Highlights</h2>
+      <div class="grid three-col" id="projectGrid">
+        <article class="project-card"><img src="images/project_placeholder.png" alt="Ankoraa project preview" />
+          <div class="project-body">
+            <h3>Ankoraa</h3><span class="pill">Private</span><span class="pill">HTML/Django</span>
+            <p>Single-vendor ecommerce platform with browsing, cart flow, and checkout experience.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="E-Ration project preview" />
+          <div class="project-body">
+            <h3>E-Ration</h3><span class="pill">Private</span><span class="pill">Django/DRF</span>
+            <p>Digital ration-card ordering with payment integration and major paperwork reduction.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="MSU and cloud projects preview" />
+          <div class="project-body">
+            <h3>MSU / Cloud Work</h3><span class="pill">Production</span><span class="pill">AWS</span>
+            <p>Multi-site production stack, cloud storage logic, and infrastructure reliability work.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="Service portal project preview" />
+          <div class="project-body">
+            <h3>nodewave-revamp</h3><span class="pill">Public</span><span class="pill">HTML</span>
+            <p>Modernized UI/UX revamp effort focused on cleaner structure and better responsiveness.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="Healthcare website preview" />
+          <div class="project-body">
+            <h3>hrms_website / cmd-our-team-page</h3><span class="pill">Mixed</span><span class="pill">HTML/CSS</span>
+            <p>Corporate and team presentation pages with practical responsive layout implementation.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png"
+            alt="Game and utility projects preview" />
+          <div class="project-body">
+            <h3>bdcash7 + utilities</h3><span class="pill">Public</span><span class="pill">Django/Game</span>
+            <p>Interactive gaming and utility-style builds including calculators, task tools, and APIs.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="nodebase-telegram-mini-app" />
+          <div class="project-body">
+            <h3>nodebase-telegram-mini-app</h3><span class="pill">Project</span>
+            <p>Telegram mini application built with modern Node.js backend.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="dhpe-erp-backend" />
+          <div class="project-body">
+            <h3>dhpe-erp-backend</h3><span class="pill">Backend</span>
+            <p>Robust ERP backend system for managing business resources and workflows.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="dhpe-erp-frontend" />
+          <div class="project-body">
+            <h3>dhpe-erp-frontend</h3><span class="pill">Frontend</span>
+            <p>Interactive frontend application for the DHPE ERP system.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="stenosol" />
+          <div class="project-body">
+            <h3>stenosol</h3><span class="pill">Project</span>
+            <p>Web solution focusing on performance and modern user experience.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="nodewave-game" />
+          <div class="project-body">
+            <h3>nodewave-game</h3><span class="pill">Game</span>
+            <p>Interactive gaming project developed under the Nodewave umbrella.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="nodewave-cloud" />
+          <div class="project-body">
+            <h3>nodewave-cloud</h3><span class="pill">Cloud</span>
+            <p>Cloud infrastructure and deployment automation project for Nodewave.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="employee-monitoring" />
+          <div class="project-body">
+            <h3>employee-monitoring</h3><span class="pill">Project</span>
+            <p>System for tracking and managing employee activities and productivity.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="ibdaad-it" />
+          <div class="project-body">
+            <h3>ibdaad-it</h3><span class="pill">Project</span>
+            <p>IT solutions and service portal for business operations.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="intelactiv" />
+          <div class="project-body">
+            <h3>intelactiv</h3><span class="pill">Project</span>
+            <p>Interactive platform featuring dynamic data handling and analytics.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="jwellery-pos" />
+          <div class="project-body">
+            <h3>jwellery-pos</h3><span class="pill">POS</span>
+            <p>Point of Sale system tailored specifically for jewelry businesses.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png"
+            alt="india-mart-data-scrapper-extension" />
+          <div class="project-body">
+            <h3>india-mart-data-scrapper</h3><span class="pill">Extension</span>
+            <p>Browser extension for extracting and analyzing IndiaMart data.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png"
+            alt="emplyee-task-assign-real-time-notification" />
+          <div class="project-body">
+            <h3>emplyee-task-assign</h3><span class="pill">Real-time</span>
+            <p>Task assignment portal with real-time notification capabilities.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="indian-chiken-express" />
+          <div class="project-body">
+            <h3>indian-chiken-express</h3><span class="pill">E-commerce</span>
+            <p>Online food ordering and delivery management system.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="amuzeum-lab" />
+          <div class="project-body">
+            <h3>amuzeum-lab</h3><span class="pill">Project</span>
+            <p>Creative lab project featuring modern web design and interactions.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="user-organasation-tree" />
+          <div class="project-body">
+            <h3>user-organasation-tree</h3><span class="pill">UI/UX</span>
+            <p>Hierarchical visualization component for user organizational structures.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="emi-calculator" />
+          <div class="project-body">
+            <h3>emi-calculator</h3><span class="pill">Utility</span>
+            <p>Financial utility application for quick and accurate EMI calculations.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="product-catelog-curd" />
+          <div class="project-body">
+            <h3>product-catelog-curd</h3><span class="pill">CRUD</span>
+            <p>Complete catalog management system with CRUD operations.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="Ufx_studio" />
+          <div class="project-body">
+            <h3>Ufx_studio</h3><span class="pill">Project</span>
+            <p>Studio website showcasing portfolio items and service offerings.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="mobile_cover_website" />
+          <div class="project-body">
+            <h3>mobile_cover_website</h3><span class="pill">E-commerce</span>
+            <p>Online store focused on selling mobile covers and accessories.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="luduchash7" />
+          <div class="project-body">
+            <h3>luduchash7</h3><span class="pill">Game</span>
+            <p>Interactive web-based multiplayer game implementation.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="ancifab" />
+          <div class="project-body">
+            <h3>ancifab</h3><span class="pill">Project</span>
+            <p>Custom web application for specific business logic and workflows.</p>
+          </div>
+        </article>
+        <article class="project-card"><img src="images/project_placeholder.png" alt="portfolio" />
+          <div class="project-body">
+            <h3>portfolio</h3><span class="pill">Personal</span>
+            <p>This very portfolio website, showcasing projects and experience.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <button id="showMoreProjects" class="btn" style="padding: 12px 24px; font-size: 1.05rem;">Show More
+          Projects</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education & Achievements</h2>
+      <div class="grid two-col">
+        <article class="glass card">
+          <h3>GNIIT Diploma — Full Stack Development</h3>
+          <p>NIIT, Garia, Kolkata | Oct 2017 – May 2021</p>
+        </article>
+        <article class="glass card">
+          <h3>Bachelor's Degree</h3>
+          <p>Calcutta University, Kolkata | June 2013 – June 2017</p>
+        </article>
+        <article class="glass card">
+          <h3>Award</h3>
+          <p>Employee of the Month — Heliware (October 2023)</p>
+        </article>
+        <article class="glass card">
+          <h3>Languages</h3>
+          <p>English | Hindi | Bengali</p>
+        </article>
+      </div>
     </section>
   </main>
 
-    <section class="grid grid-2" style="margin-top:18px;">
-      <article class="glass panel">
-        <h2>AWS Cloud Expertise</h2>
-        <ul>
-          <li><strong>EC2:</strong> Instances, EBS attach/detach, AMI, Elastic IP, security groups, right-sizing.</li>
-          <li><strong>S3:</strong> Policy JSON, lifecycle, storage workflows and CLI operations.</li>
-          <li><strong>Lambda:</strong> Serverless ZIP pipelines and cloud automation jobs.</li>
-          <li><strong>RDS/DynamoDB:</strong> Aurora + PostgreSQL + NoSQL operations and scaling.</li>
-          <li><strong>VPC/Route53/IAM/CloudWatch/SSM:</strong> Secure networking, DNS, access control and monitoring.</li>
-        </ul>
-      </article>
-      <article class="glass panel">
-        <h2>Education, Awards & Languages</h2>
-        <p class="muted"><strong>GNIIT Diploma</strong> — Full Stack Development (NIIT, Garia, Kolkata) | Oct 2017 – May 2021</p>
-        <p class="muted"><strong>Bachelor's Degree</strong> — Calcutta University, Kolkata | June 2013 – June 2017</p>
-        <p class="muted"><strong>Award:</strong> Employee of the Month — Heliware (Oct 2023)</p>
-        <p class="muted"><strong>Languages:</strong> English | Hindi | Bengali</p>
-      </article>
-    </section>
-  </main>
-
-  <footer>© 2026 Sourav Jyoti Naskar — Python Backend Developer | AWS Cloud Engineer</footer>
+  <footer>
+    © 2026 Sourav Jyoti Naskar • Python Backend Developer • AWS Cloud Engineer
+  </footer>
 
   <script>
     (() => {
-      const projects = [
-        ["portfolio","Public","Personal portfolio project with polished responsive UI and CV presentation."],
-        ["nodebase-telegram-mini-app","Private","TypeScript mini-app architecture for Telegram ecosystem integrations."],
-        ["cmd-our-team-page","Public","Team profile and branding page optimized for business presentation."],
-        ["dhpe-erp-backend","Private","ERP backend services for workflow modules, APIs, and business logic."],
-        ["dhpe-erp-fronend","Private","ERP frontend dashboard experience for process and data management."],
-        ["nodewave-revamp","Public","UI/UX revamp project focused on modern layout and usability improvements."],
-        ["stenosol","Private","Business web system with scalable feature-focused JavaScript implementation."],
-        ["nodewave-game","Private","Interactive game logic project with performance-oriented frontend scripting."],
-        ["nodewave-cloud","Private","Cloud-oriented interface project with deployment-friendly web structure."],
-        ["employee-monitoring","Private","Internal monitoring and tracking solution for employee operations."],
-        ["ecomarce-ankoraa-updated","Private","Enhanced ecommerce experience with improved flow and maintainability."],
-        ["Ibdaad-it","Private","Corporate web presence and design-focused styling implementation."],
-        ["intelactiv","Private","Custom CSS-driven front-end for modern brand identity pages."],
-        ["jwellery-pos","Private","POS-oriented JavaScript project for inventory and transaction workflows."],
-        ["india-mart-data-scrapper-extension","Private","Automation extension for lead/data extraction workflows."],
-        ["emplyee-task-assign-real-time-notification","Public","Django signals + websocket + Celery for real-time task assignment notifications."],
-        ["hrms_website","Private","Human resource portal interface for HR operations and process visibility."],
-        ["indian-chiken-express","Private","Restaurant chain ordering interface for online delivery workflows."],
-        ["amuzeum-lab","Private","JavaScript-based product implementation with modular frontend behavior."],
-        ["user-organasation-tree","Public","Python project for organization hierarchy and structure visualization."],
-        ["emi-calculator","Public","Kotlin Android app to calculate EMI and repayment breakdown quickly."],
-        ["user-system","Private","Python-based user management module with role and account workflows."],
-        ["product-catelog-curd","Public","Python CRUD catalog app for product management operations."],
-        ["paddy-site-for-sajal","Private","Custom website delivery with styling and static content modules."],
-        ["inlactiv","Private","Python-based service project with focused utility and backend flow."],
-        ["Ufx_studio","Public","Mixed tech project supporting Django/PHP modules and delivery use cases."],
-        ["mobile_cover_website","Public","Product showcase site for mobile accessories and visual cataloging."],
-        ["luduchash7","Public","Game-oriented web build with interactive content workflow."],
-        ["ankoraa","Private","Single-vendor ecommerce platform with secure checkout and responsive pages."],
-        ["e_ration","Private","Online ration card ordering platform with payment integration."],
-        ["ancifab","Public","Service website project for business portfolio and digital presence."],
-        ["bdcash7","Public","Django casino-style game implementation with web-based interaction."]
-      ];
-
-      const colors = [
-        "linear-gradient(120deg,#164a9f,#4e8dff,#6df0df)",
-        "linear-gradient(120deg,#2f134f,#6e3ba7,#fd71b3)",
-        "linear-gradient(120deg,#18483f,#1f8f83,#6ef7d9)",
-        "linear-gradient(120deg,#29204f,#5d4bdd,#9f92ff)",
-        "linear-gradient(120deg,#563317,#b9712d,#f2c46f)",
-        "linear-gradient(120deg,#17364d,#2b82b9,#84c9f9)"
-      ];
-
-      const grid = document.getElementById("projectsGrid");
-      projects.forEach((p, i) => {
-        const card = document.createElement("article");
-        card.className = "project";
-        card.innerHTML = `
-          <div class="project-cover" style="background:${colors[i % colors.length]}"></div>
-          <div class="project-body">
-            <h3>${p[0]}</h3>
-            <span class="badge">${p[1]}</span>
-            <p class="muted">${p[2]}</p>
-          </div>`;
-        grid.appendChild(card);
-      });
-
+      // Theme Toggle Functionality
       const key = "theme-preference";
       const modes = ["auto", "dark", "light"];
-      const btn = document.getElementById("themeToggle");
+      const button = document.getElementById("themeToggle");
       const root = document.documentElement;
+
       const saved = localStorage.getItem(key);
       const initial = modes.includes(saved) ? saved : "auto";
       root.setAttribute("data-theme", initial);
-      btn.textContent = `Theme: ${initial[0].toUpperCase() + initial.slice(1)}`;
-      btn.addEventListener("click", () => {
+      button.textContent = `Theme: ${initial[0].toUpperCase() + initial.slice(1)}`;
+
+      button.addEventListener("click", () => {
         const current = root.getAttribute("data-theme") || "auto";
         const next = modes[(modes.indexOf(current) + 1) % modes.length];
         root.setAttribute("data-theme", next);
         localStorage.setItem(key, next);
-        btn.textContent = `Theme: ${next[0].toUpperCase() + next.slice(1)}`;
+        button.textContent = `Theme: ${next[0].toUpperCase() + next.slice(1)}`;
       });
+
+      // Project "Show More" Functionality
+      const projectCards = document.querySelectorAll('.project-card');
+      const showMoreBtn = document.getElementById('showMoreProjects');
+      let currentProjectsShown = 6;
+
+      if (projectCards.length > currentProjectsShown) {
+        for (let i = currentProjectsShown; i < projectCards.length; i++) {
+          projectCards[i].style.display = 'none';
+        }
+
+        if (showMoreBtn) {
+          showMoreBtn.addEventListener('click', () => {
+            const nextShown = currentProjectsShown + 6;
+            for (let i = currentProjectsShown; i < nextShown && i < projectCards.length; i++) {
+              projectCards[i].style.display = '';
+            }
+            currentProjectsShown = nextShown;
+            if (currentProjectsShown >= projectCards.length) {
+              showMoreBtn.style.display = 'none';
+            }
+          });
+        }
+      } else {
+        if (showMoreBtn) showMoreBtn.style.display = 'none';
+      }
     })();
   </script>
 </body>
+
 </html>
